@@ -3,10 +3,18 @@ import { Card, CardContent } from "@/components/ui/card";
 import { useState } from "react";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 
+type GalleryImage = {
+  src: string;
+  alt?: string;
+  title?: string;
+  caption?: string;
+};
+
 type ImageGalleryProps = {
   title: string;
   description?: string;
-  images: string[];
+  // Backwards compatible: accept either URLs or rich objects
+  images: Array<string | GalleryImage>;
   columns?: 2 | 3 | 4;
   aspectRatio?: "square" | "video" | "portrait";
 };
@@ -52,6 +60,27 @@ const ImageGallery = ({
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
+  const toReadableAlt = (src: string) => {
+    try {
+      const file = src.split("/").pop() || src;
+      const base = file.replace(/\.[^.]+$/, "");
+      return base
+        .replace(/[-_]+/g, " ")
+        .replace(/\b(IMG|WA|JPEG|JPG|PNG)\b/gi, "")
+        .replace(/\s+/g, " ")
+        .trim()
+        .replace(/\b\w/g, (m) => m.toUpperCase());
+    } catch {
+      return title;
+    }
+  };
+
+  const normalized: GalleryImage[] = images.map((item) =>
+    typeof item === "string"
+      ? { src: item, alt: `${title} — ${toReadableAlt(item)}` }
+      : { ...item, alt: item.alt || `${title} — ${toReadableAlt(item.src)}` }
+  );
+
   const openLightbox = (index: number) => {
     setActiveIndex(index);
     setLightboxOpen(true);
@@ -75,12 +104,12 @@ const ImageGallery = ({
 
         {/* Image Grid */}
         <div className={`grid ${gridCols[columns]} gap-6`}>
-          {images.map((src, index) => (
+          {normalized.map((img, index) => (
             <div key={index} className="group cursor-zoom-in" onClick={() => openLightbox(index)}>
               <div className={`${aspectClasses[aspectRatio]} relative overflow-hidden rounded-xl bg-gray-100 shadow-md transition-all duration-500 group-hover:shadow-2xl group-hover:scale-[1.02]`}>
                 <img 
-                  src={src} 
-                  alt={`${title} image ${index + 1}`} 
+                  src={img.src} 
+                  alt={img.alt || `${title} image ${index + 1}`} 
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" 
                   loading="lazy"
                 />
@@ -99,6 +128,13 @@ const ImageGallery = ({
                 <div className="absolute top-3 right-3 bg-sage text-white text-xs font-semibold px-2 py-1 rounded-full shadow-md">
                   {index + 1}
                 </div>
+
+                {/* Optional caption for SEO/accessibility */}
+                {img.caption && (
+                  <div className="absolute bottom-2 left-2 bg-black/50 text-white text-xs px-2 py-1 rounded-md">
+                    {img.caption}
+                  </div>
+                )}
               </div>
             </div>
           ))}
@@ -108,7 +144,7 @@ const ImageGallery = ({
         <div className="mt-8 text-center">
           <div className="inline-flex items-center gap-2 bg-sage/10 text-sage px-4 py-2 rounded-full text-sm font-medium">
             <Camera className="h-4 w-4" />
-            {images.length} {images.length === 1 ? 'Image' : 'Images'} • {aspectRatio} format
+            {normalized.length} {normalized.length === 1 ? 'Image' : 'Images'} • {aspectRatio} format
           </div>
         </div>
       </CardContent>
@@ -122,8 +158,8 @@ const ImageGallery = ({
           {activeIndex !== null && (
             <div className="relative w-full h-full p-2 sm:p-4">
               <img
-                src={images[activeIndex]}
-                alt={`${title} image ${activeIndex + 1}`}
+                src={normalized[activeIndex].src}
+                alt={normalized[activeIndex].alt || `${title} image ${activeIndex + 1}`}
                 className="w-full h-full object-contain max-h-[80vh]"
               />
             </div>

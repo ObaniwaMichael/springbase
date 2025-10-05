@@ -1,8 +1,32 @@
 import { Building, FlaskConical, Computer, TreePine, Utensils, Heart } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import ImageModal from "@/components/ImageModal";
+import { useNavigate } from "react-router-dom";
 
 const Facilities = () => {
+  const navigate = useNavigate();
+
+  // Mapping facility cards to gallery sections
+  const facilityToGalleryMap: Record<string, string> = {
+    "Modern Classrooms": "classrooms",
+    "Standard ICT Centre": "science-lab",
+    "Science Laboratories": "science-lab", 
+    "Technology Center": "science-lab",
+    "Outdoor Learning Spaces": "campus-tour",
+    "Dining Hall": "campus-tour",
+    "Sick Bay": "campus-tour",
+    "School Bus Service": "campus-tour",
+    "Lunch Programme": "campus-tour",
+    "Wellness Center": "campus-tour"
+  };
+
+  const handleCardClick = (facilityTitle: string) => {
+    const gallerySection = facilityToGalleryMap[facilityTitle];
+    if (gallerySection) {
+      navigate(`/gallery?album=${gallerySection}`);
+    }
+  };
+
   const facilities = [
     {
       icon: <Building className="h-8 w-8 text-sage" />,
@@ -75,8 +99,9 @@ const Facilities = () => {
           {facilities.map((facility, index) => (
             <Card 
               key={index} 
-              className="card-elegant bg-card border-0 text-center h-full"
+              className="card-elegant bg-card border-0 text-center h-full cursor-pointer hover:shadow-lg transition-all duration-300 hover:scale-105 hover:border-sage/20"
               style={{ animationDelay: `${index * 0.1}s` }}
+              onClick={() => handleCardClick(facility.title)}
             >
               <CardContent className="p-6">
                 <div className="flex justify-center mb-4">
@@ -88,9 +113,25 @@ const Facilities = () => {
                 <p className="text-muted-foreground leading-relaxed">
                   {facility.description}
                 </p>
+                <div className="mt-4 text-sm text-sage font-medium">
+                  Click to view gallery →
+                </div>
               </CardContent>
             </Card>
           ))}
+        </div>
+
+        {/* See All Facilities Button */}
+        <div className="text-center mb-16">
+          <button
+            onClick={() => navigate('/gallery')}
+            className="inline-flex items-center px-8 py-4 bg-sage text-white font-semibold rounded-full hover:bg-sage/90 transition-colors duration-300 shadow-lg hover:shadow-xl"
+          >
+            View All Facilities in Gallery
+            <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
         </div>
 
         {/* Feature Highlights */}
@@ -160,16 +201,25 @@ const Facilities = () => {
               
               {/* Virtual Tour Section */}
               <div className="relative">
-                <div className="aspect-video rounded-2xl bg-gradient-to-br from-sage/20 to-lotus/20 p-6 card-elegant">
+                <div 
+                  className="aspect-video rounded-2xl bg-gradient-to-br from-sage/20 to-lotus/20 p-6 card-elegant cursor-pointer hover:shadow-xl transition-all duration-300 transform hover:scale-105 hover:from-sage/30 hover:to-lotus/30"
+                  onClick={() => navigate('/gallery?album=campus-tour')}
+                >
                   <div className="h-full rounded-xl bg-card flex items-center justify-center">
                     <div className="text-center">
                       <Building className="h-16 w-16 text-sage mx-auto mb-4" />
                       <h4 className="text-2xl font-heading font-bold text-charcoal mb-2">
                         Take a Virtual Tour
                       </h4>
-                      <p className="text-muted-foreground">
+                      <p className="text-muted-foreground mb-3">
                         Explore our beautiful campus from anywhere
                       </p>
+                      <div className="inline-flex items-center text-sage font-medium text-sm">
+                        View Campus Images
+                        <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                        </svg>
+                      </div>
                     </div>
                   </div>
                 </div>

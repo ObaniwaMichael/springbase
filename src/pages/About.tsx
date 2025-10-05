@@ -2,8 +2,6 @@ import PageLayout from "@/components/PageLayout";
 import PlaceholderSection from "@/components/PlaceholderSection";
 import About from "@/components/About";
 import ImageGallery from "@/components/ImageGallery";
-import Img0050 from "@/assets/IMG-20250811-WA0050.jpg";
-import Img0052 from "@/assets/IMG-20250811-WA0052.jpg";
 
 const AboutPage = () => {
   return (
@@ -16,7 +14,7 @@ const AboutPage = () => {
           <ImageGallery 
             title="School History & Milestones" 
             description="Historical photos and important moments in Springbase's journey"
-            images={[Img0050, Img0052]}
+            images={[]}
             columns={2}
             aspectRatio="square"
           />

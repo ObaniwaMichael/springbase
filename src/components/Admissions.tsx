@@ -1,4 +1,4 @@
-import { CheckCircle, Calendar, FileText, Users, ArrowRight } from "lucide-react";
+import { CheckCircle, Calendar, FileText, Users, ArrowRight, ShoppingCart, Upload, ClipboardCheck, FileCheck, CreditCard, Receipt, Package, GraduationCap } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import ImageModal from "@/components/ImageModal";
@@ -6,34 +6,54 @@ import ImageModal from "@/components/ImageModal";
 const Admissions = () => {
   const steps = [
     {
-      icon: <FileText className="h-6 w-6" />,
+      icon: <ShoppingCart className="h-6 w-6" />,
+      title: "Purchase of Form",
+      description: "Obtain the admission form from our school office or download online."
+    },
+    {
+      icon: <Upload className="h-6 w-6" />,
       title: "Submit Application",
-      description: "Complete our online application form with student information and academic records."
+      description: "Submit completed application with passport photographs, photocopy of birth certificate, and last term's result."
     },
     {
-      icon: <Calendar className="h-6 w-6" />,
-      title: "Schedule Interview",
-      description: "Meet with our admissions team and take a campus tour with your family."
+      icon: <ClipboardCheck className="h-6 w-6" />,
+      title: "Placement Test",
+      description: "Conduct placement test/entrance examination to assess academic readiness."
     },
     {
-      icon: <Users className="h-6 w-6" />,
-      title: "Assessment Day",
-      description: "Student evaluation session to understand learning style and academic level."
+      icon: <FileCheck className="h-6 w-6" />,
+      title: "Collect Admission File",
+      description: "Collect admission file for the class being admitted into."
     },
     {
-      icon: <CheckCircle className="h-6 w-6" />,
-      title: "Enrollment Decision",
-      description: "Receive admission decision and complete enrollment process."
+      icon: <CreditCard className="h-6 w-6" />,
+      title: "Payment & Medical Form",
+      description: "Submit teller for payment of school fees and complete medical form."
+    },
+    {
+      icon: <Receipt className="h-6 w-6" />,
+      title: "Collect Receipt",
+      description: "Collect school fees receipt as proof of payment."
+    },
+    {
+      icon: <Package className="h-6 w-6" />,
+      title: "Collect Materials",
+      description: "Receive issuance of other relevant materials and school supplies."
+    },
+    {
+      icon: <GraduationCap className="h-6 w-6" />,
+      title: "School Begins",
+      description: "Welcome to Springbase! Your educational journey starts here."
     }
   ];
 
   const requirements = [
     "Completed application form",
-    "Previous academic transcripts",
-    "Birth certificate copy",
-    "Immunization records",
-    "Two character references",
-    "Parent/guardian interview"
+    "Passport photographs",
+    "Photocopy of birth certificate",
+    "Last term's result",
+    "School fees payment teller",
+    "Completed medical form"
   ];
 
   return (
@@ -46,7 +66,7 @@ const Admissions = () => {
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Begin your child's journey toward knowledge and greatness. 
-            Our admissions process is designed to ensure the best fit for every student.
+            Our streamlined admission process ensures a smooth transition into our educational community.
           </p>
         </div>
 
@@ -78,13 +98,13 @@ const Admissions = () => {
           </div>
         </div>
 
-        {/* Application Process */}
+        {/* Admission Process */}
         <div className="mb-16">
           <h3 className="text-3xl font-heading font-bold text-charcoal text-center mb-12">
-            Application Process
+            Admission Process
           </h3>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-4 md:gap-6">
             {steps.map((step, index) => (
               <Card 
                 key={index} 
@@ -125,7 +145,7 @@ const Admissions = () => {
             <Card className="card-elegant bg-card border-0">
               <CardHeader>
                 <CardTitle className="text-2xl text-charcoal">
-                  Application Requirements
+                  Required Documents
                 </CardTitle>
               </CardHeader>
               <CardContent>
@@ -165,13 +185,13 @@ const Admissions = () => {
                   Ready to Begin?
                 </h3>
                 <p className="text-lg mb-6 opacity-90">
-                  Take the first step in your child's educational journey. 
-                  Our admissions team is here to guide you through every step of the process.
+                  Begin your child's educational journey with Springbase. 
+                  Our admissions team will guide you through each step of our streamlined process.
                 </p>
                 
                 <div className="space-y-4">
                   <Button variant="secondary" size="lg" className="w-full" onClick={() => (window.location.href = '/admissions')}>
-                    Start Application
+                    Get Admission Form
                   </Button>
                   <Button variant="outline" size="lg" className="w-full bg-gray-500 hover:bg-gray-600 text-white border-gray-500 hover:border-gray-600" onClick={() => (window.location.href = '/schedule-tour')}>
                     Schedule Campus Tour

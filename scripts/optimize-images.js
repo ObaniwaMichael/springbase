@@ -15,29 +15,89 @@ function ensureDir(dir) {
 /** Map file to album folder by filename (basic mapping for now) */
 function mapToAlbum(filename) {
   const f = filename.toLowerCase();
-  // Science lab set
+  
+  // Science Lab & Computer Facilities
   if (
-    [
-      'img_1502', 'img_1709', 'img_1711', 'img_1721',
-      'img_1752', 'img_1753', 'img_1754', 'img_1755', 'img_1756', 'img_1757',
-      'img_1758', 'img_1759', 'img_1760', 'img_1761', 'img_1762', 'img_1763',
-      'img_1764', 'img_1765', 'img_1766', 'img_1767', 'img_1768', 'img_1769',
-      'img_1770', 'img_1771', 'img_1772', 'img_1773', 'img_1774', 'img_1775',
-      'img_1776', 'img_1777', 'img_1778', 'img_1779', 'img_1780', 'img_1781',
-      'img_1782', 'img_1783', 'img_1784', 'img_1785', 'img_1786', 'img_1787',
-      'img_1788', 'img_1789', 'img_1790', 'img_1791', 'img_1792', 'img_1793',
-      'img_1794', 'img_1795', 'img_1796', 'img_1797', 'img_1798', 'img_1799',
-      'img_1800', 'img_1801', 'img_1802', 'img_1803', 'img_1804', 'img_1805',
-      'img_1806', 'img_1807', 'img_1808', 'img_1809', 'img_1810', 'img_1811',
-      'img_1812'
-    ].some((k) => f.startsWith(k))
+    f.includes('computer') || 
+    f.includes('lab') || 
+    f.includes('utilities') ||
+    f.startsWith('img_175') || 
+    f.startsWith('img_176') || 
+    f.startsWith('img_177') || 
+    f.startsWith('img_178') || 
+    f.startsWith('img_179') || 
+    f.startsWith('img_180')
   ) {
     return 'science-lab';
   }
-  if (f.includes('8eada9e5')) return 'staff';
-  if (f.includes('c3fc96ba')) return 'parade';
-  if (f.includes('af7c268b') || f.includes('142af87f')) return 'assemblies';
-  // everything else: community-outreach
+  
+  // Staff & Leadership
+  if (f.includes('8eada9e5') || f.includes('teachers')) {
+    return 'staff';
+  }
+  
+  // Independence Day Parade
+  if (f.includes('c3fc96ba') || f.includes('independence day') || f.includes('parade')) {
+    return 'parade';
+  }
+  
+  // Assemblies & Welcome Events
+  if (f.includes('af7c268b') || f.includes('142af87f') || f.includes('assemblies') || f.includes('welcome')) {
+    return 'assemblies';
+  }
+  
+  // Celebrations & Events
+  if (f.includes('celebr') || f.includes('celebration') || f.includes('events') || f.includes('promotion')) {
+    return 'celebrations';
+  }
+  
+  // Classroom Activities
+  if (
+    f.includes('classroom') ||
+    f.includes('clssroom') ||
+    f.includes('studlife') ||
+    f.includes('stulife') ||
+    // Explicit mapping requested for WA0030..WA0035
+    f.startsWith('img-20251004-wa0030') ||
+    f.startsWith('img-20251004-wa0031') ||
+    f.startsWith('img-20251004-wa0032') ||
+    f.startsWith('img-20251004-wa0034') ||
+    f.startsWith('img-20251004-wa0035')
+  ) {
+    return 'classrooms';
+  }
+  
+  // Campus Tour & Facilities
+  if (
+    f.includes('overview') || 
+    f.includes('primary') || 
+    f.includes('tour') || 
+    f.includes('recreation') ||
+    f.includes('hall') ||
+    f.includes('facilities') ||
+    f.includes('school bus') ||
+    f.includes('school view') ||
+    f.includes('secondary school')
+  ) {
+    return 'campus-tour';
+  }
+  
+  // Sports & Athletics
+  if (f.includes('sports') || f.includes('athletics') || f.includes('playground')) {
+    return 'sports';
+  }
+  
+  // WhatsApp Images (Community Outreach)
+  if (f.includes('whatsapp')) {
+    return 'community-outreach';
+  }
+  
+  // Generic IMG files (Community Outreach)
+  if (f.startsWith('img-2025')) {
+    return 'community-outreach';
+  }
+  
+  // Default fallback
   return 'community-outreach';
 }
 
@@ -47,8 +107,16 @@ async function processImage(filePath) {
   const outDir = path.join(outBase, album);
   ensureDir(outDir);
 
-  const image = sharp(filePath);
-  const meta = await image.metadata();
+  let image;
+  let meta;
+  
+  try {
+    image = sharp(filePath);
+    meta = await image.metadata();
+  } catch (error) {
+    console.warn(`Skipping unsupported format: ${filename} (${error.message.split('(')[0]})`);
+    return;
+  }
 
   // Generate responsive sizes in WebP
   const files = [];
@@ -87,11 +155,14 @@ async function processImage(filePath) {
     .catch(() => {});
   if (fs.existsSync(jpgOrigDest)) files.push(path.posix.join(album, jpgOrig));
 
-  if (!manifest.albums[album]) manifest.albums[album] = [];
-  manifest.albums[album].push({
-    base: filename.replace(/\.[^.]+$/, ''),
-    files
-  });
+  // Only add to manifest if we successfully created at least one file
+  if (files.length > 0) {
+    if (!manifest.albums[album]) manifest.albums[album] = [];
+    manifest.albums[album].push({
+      base: filename.replace(/\.[^.]+$/, ''),
+      files
+    });
+  }
 }
 
 function listJpgs(dir) {

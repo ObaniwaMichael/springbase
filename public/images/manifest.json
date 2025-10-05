@@ -1,115 +1,6 @@
 {
   "albums": {
-    "assemblies": [
-      {
-        "base": "142af87f-ee1e-4958-a096-7130a1d977cf",
-        "files": [
-          "assemblies/142af87f-ee1e-4958-a096-7130a1d977cf-1280.webp",
-          "assemblies/142af87f-ee1e-4958-a096-7130a1d977cf-1280.jpg",
-          "assemblies/142af87f-ee1e-4958-a096-7130a1d977cf-960.webp",
-          "assemblies/142af87f-ee1e-4958-a096-7130a1d977cf-960.jpg",
-          "assemblies/142af87f-ee1e-4958-a096-7130a1d977cf-640.webp",
-          "assemblies/142af87f-ee1e-4958-a096-7130a1d977cf-640.jpg",
-          "assemblies/142af87f-ee1e-4958-a096-7130a1d977cf.webp",
-          "assemblies/142af87f-ee1e-4958-a096-7130a1d977cf.jpg"
-        ]
-      },
-      {
-        "base": "af7c268b-8fdc-4a40-9aa4-9fd9d1030cbd",
-        "files": [
-          "assemblies/af7c268b-8fdc-4a40-9aa4-9fd9d1030cbd-1920.webp",
-          "assemblies/af7c268b-8fdc-4a40-9aa4-9fd9d1030cbd-1920.jpg",
-          "assemblies/af7c268b-8fdc-4a40-9aa4-9fd9d1030cbd-1280.webp",
-          "assemblies/af7c268b-8fdc-4a40-9aa4-9fd9d1030cbd-1280.jpg",
-          "assemblies/af7c268b-8fdc-4a40-9aa4-9fd9d1030cbd-960.webp",
-          "assemblies/af7c268b-8fdc-4a40-9aa4-9fd9d1030cbd-960.jpg",
-          "assemblies/af7c268b-8fdc-4a40-9aa4-9fd9d1030cbd-640.webp",
-          "assemblies/af7c268b-8fdc-4a40-9aa4-9fd9d1030cbd-640.jpg",
-          "assemblies/af7c268b-8fdc-4a40-9aa4-9fd9d1030cbd.webp",
-          "assemblies/af7c268b-8fdc-4a40-9aa4-9fd9d1030cbd.jpg"
-        ]
-      }
-    ],
     "community-outreach": [
-      {
-        "base": "1f5c7c37-efed-4b02-a337-e9a2b1d5bd56",
-        "files": [
-          "community-outreach/1f5c7c37-efed-4b02-a337-e9a2b1d5bd56-960.webp",
-          "community-outreach/1f5c7c37-efed-4b02-a337-e9a2b1d5bd56-960.jpg",
-          "community-outreach/1f5c7c37-efed-4b02-a337-e9a2b1d5bd56-640.webp",
-          "community-outreach/1f5c7c37-efed-4b02-a337-e9a2b1d5bd56-640.jpg",
-          "community-outreach/1f5c7c37-efed-4b02-a337-e9a2b1d5bd56.webp",
-          "community-outreach/1f5c7c37-efed-4b02-a337-e9a2b1d5bd56.jpg"
-        ]
-      },
-      {
-        "base": "3889a68c-43f9-4bd5-b840-4b1506f31faf",
-        "files": [
-          "community-outreach/3889a68c-43f9-4bd5-b840-4b1506f31faf-960.webp",
-          "community-outreach/3889a68c-43f9-4bd5-b840-4b1506f31faf-960.jpg",
-          "community-outreach/3889a68c-43f9-4bd5-b840-4b1506f31faf-640.webp",
-          "community-outreach/3889a68c-43f9-4bd5-b840-4b1506f31faf-640.jpg",
-          "community-outreach/3889a68c-43f9-4bd5-b840-4b1506f31faf.webp",
-          "community-outreach/3889a68c-43f9-4bd5-b840-4b1506f31faf.jpg"
-        ]
-      },
-      {
-        "base": "5c7d0156-d96b-4f50-b7c3-576d2ee65944",
-        "files": [
-          "community-outreach/5c7d0156-d96b-4f50-b7c3-576d2ee65944-960.webp",
-          "community-outreach/5c7d0156-d96b-4f50-b7c3-576d2ee65944-960.jpg",
-          "community-outreach/5c7d0156-d96b-4f50-b7c3-576d2ee65944-640.webp",
-          "community-outreach/5c7d0156-d96b-4f50-b7c3-576d2ee65944-640.jpg",
-          "community-outreach/5c7d0156-d96b-4f50-b7c3-576d2ee65944.webp",
-          "community-outreach/5c7d0156-d96b-4f50-b7c3-576d2ee65944.jpg"
-        ]
-      },
-      {
-        "base": "5e74a848-2b3b-479b-8be2-18d108930188",
-        "files": [
-          "community-outreach/5e74a848-2b3b-479b-8be2-18d108930188-960.webp",
-          "community-outreach/5e74a848-2b3b-479b-8be2-18d108930188-960.jpg",
-          "community-outreach/5e74a848-2b3b-479b-8be2-18d108930188-640.webp",
-          "community-outreach/5e74a848-2b3b-479b-8be2-18d108930188-640.jpg",
-          "community-outreach/5e74a848-2b3b-479b-8be2-18d108930188.webp",
-          "community-outreach/5e74a848-2b3b-479b-8be2-18d108930188.jpg"
-        ]
-      },
-      {
-        "base": "72e4a922-99d5-4389-8d55-92790a11ec79",
-        "files": [
-          "community-outreach/72e4a922-99d5-4389-8d55-92790a11ec79-1280.webp",
-          "community-outreach/72e4a922-99d5-4389-8d55-92790a11ec79-1280.jpg",
-          "community-outreach/72e4a922-99d5-4389-8d55-92790a11ec79-960.webp",
-          "community-outreach/72e4a922-99d5-4389-8d55-92790a11ec79-960.jpg",
-          "community-outreach/72e4a922-99d5-4389-8d55-92790a11ec79-640.webp",
-          "community-outreach/72e4a922-99d5-4389-8d55-92790a11ec79-640.jpg",
-          "community-outreach/72e4a922-99d5-4389-8d55-92790a11ec79.webp",
-          "community-outreach/72e4a922-99d5-4389-8d55-92790a11ec79.jpg"
-        ]
-      },
-      {
-        "base": "7d7173bc-95c3-4706-867e-c00c4eb25269",
-        "files": [
-          "community-outreach/7d7173bc-95c3-4706-867e-c00c4eb25269-960.webp",
-          "community-outreach/7d7173bc-95c3-4706-867e-c00c4eb25269-960.jpg",
-          "community-outreach/7d7173bc-95c3-4706-867e-c00c4eb25269-640.webp",
-          "community-outreach/7d7173bc-95c3-4706-867e-c00c4eb25269-640.jpg",
-          "community-outreach/7d7173bc-95c3-4706-867e-c00c4eb25269.webp",
-          "community-outreach/7d7173bc-95c3-4706-867e-c00c4eb25269.jpg"
-        ]
-      },
-      {
-        "base": "IMG-20250811-WA0039",
-        "files": [
-          "community-outreach/IMG-20250811-WA0039-960.webp",
-          "community-outreach/IMG-20250811-WA0039-960.jpg",
-          "community-outreach/IMG-20250811-WA0039-640.webp",
-          "community-outreach/IMG-20250811-WA0039-640.jpg",
-          "community-outreach/IMG-20250811-WA0039.webp",
-          "community-outreach/IMG-20250811-WA0039.jpg"
-        ]
-      },
       {
         "base": "IMG-20250811-WA0040",
         "files": [
@@ -164,15 +55,6 @@
         ]
       },
       {
-        "base": "IMG-20250811-WA0045",
-        "files": [
-          "community-outreach/IMG-20250811-WA0045-640.webp",
-          "community-outreach/IMG-20250811-WA0045-640.jpg",
-          "community-outreach/IMG-20250811-WA0045.webp",
-          "community-outreach/IMG-20250811-WA0045.jpg"
-        ]
-      },
-      {
         "base": "IMG-20250811-WA0046",
         "files": [
           "community-outreach/IMG-20250811-WA0046-640.webp",
@@ -204,28 +86,6 @@
         ]
       },
       {
-        "base": "IMG-20250811-WA0049",
-        "files": [
-          "community-outreach/IMG-20250811-WA0049-960.webp",
-          "community-outreach/IMG-20250811-WA0049-960.jpg",
-          "community-outreach/IMG-20250811-WA0049-640.webp",
-          "community-outreach/IMG-20250811-WA0049-640.jpg",
-          "community-outreach/IMG-20250811-WA0049.webp",
-          "community-outreach/IMG-20250811-WA0049.jpg"
-        ]
-      },
-      {
-        "base": "IMG-20250811-WA0050",
-        "files": [
-          "community-outreach/IMG-20250811-WA0050-960.webp",
-          "community-outreach/IMG-20250811-WA0050-960.jpg",
-          "community-outreach/IMG-20250811-WA0050-640.webp",
-          "community-outreach/IMG-20250811-WA0050-640.jpg",
-          "community-outreach/IMG-20250811-WA0050.webp",
-          "community-outreach/IMG-20250811-WA0050.jpg"
-        ]
-      },
-      {
         "base": "IMG-20250811-WA0051",
         "files": [
           "community-outreach/IMG-20250811-WA0051-1280.webp",
@@ -239,215 +99,83 @@
         ]
       },
       {
-        "base": "IMG-20250811-WA0052",
+        "base": "IMG-20251004-WA0036",
         "files": [
-          "community-outreach/IMG-20250811-WA0052.webp",
-          "community-outreach/IMG-20250811-WA0052.jpg"
+          "community-outreach/IMG-20251004-WA0036-960.webp",
+          "community-outreach/IMG-20251004-WA0036-960.jpg",
+          "community-outreach/IMG-20251004-WA0036-640.webp",
+          "community-outreach/IMG-20251004-WA0036-640.jpg",
+          "community-outreach/IMG-20251004-WA0036.webp",
+          "community-outreach/IMG-20251004-WA0036.jpg"
         ]
       },
       {
-        "base": "IMG-20250811-WA0053",
+        "base": "IMG-20251004-WA0037",
         "files": [
-          "community-outreach/IMG-20250811-WA0053-1280.webp",
-          "community-outreach/IMG-20250811-WA0053-1280.jpg",
-          "community-outreach/IMG-20250811-WA0053-960.webp",
-          "community-outreach/IMG-20250811-WA0053-960.jpg",
-          "community-outreach/IMG-20250811-WA0053-640.webp",
-          "community-outreach/IMG-20250811-WA0053-640.jpg",
-          "community-outreach/IMG-20250811-WA0053.webp",
-          "community-outreach/IMG-20250811-WA0053.jpg"
+          "community-outreach/IMG-20251004-WA0037-960.webp",
+          "community-outreach/IMG-20251004-WA0037-960.jpg",
+          "community-outreach/IMG-20251004-WA0037-640.webp",
+          "community-outreach/IMG-20251004-WA0037-640.jpg",
+          "community-outreach/IMG-20251004-WA0037.webp",
+          "community-outreach/IMG-20251004-WA0037.jpg"
         ]
       },
       {
-        "base": "WhatsApp Image 2025-09-04 at 08.58.31",
+        "base": "IMG-20251004-WA0038",
         "files": [
-          "community-outreach/WhatsApp Image 2025-09-04 at 08.58.31.webp",
-          "community-outreach/WhatsApp Image 2025-09-04 at 08.58.31.jpg"
+          "community-outreach/IMG-20251004-WA0038-960.webp",
+          "community-outreach/IMG-20251004-WA0038-960.jpg",
+          "community-outreach/IMG-20251004-WA0038-640.webp",
+          "community-outreach/IMG-20251004-WA0038-640.jpg",
+          "community-outreach/IMG-20251004-WA0038.webp",
+          "community-outreach/IMG-20251004-WA0038.jpg"
         ]
       },
       {
-        "base": "WhatsApp Image 2025-09-04 at 11.02.51",
+        "base": "admission",
         "files": [
-          "community-outreach/WhatsApp Image 2025-09-04 at 11.02.51-960.webp",
-          "community-outreach/WhatsApp Image 2025-09-04 at 11.02.51-960.jpg",
-          "community-outreach/WhatsApp Image 2025-09-04 at 11.02.51-640.webp",
-          "community-outreach/WhatsApp Image 2025-09-04 at 11.02.51-640.jpg",
-          "community-outreach/WhatsApp Image 2025-09-04 at 11.02.51.webp",
-          "community-outreach/WhatsApp Image 2025-09-04 at 11.02.51.jpg"
+          "community-outreach/admission.webp",
+          "community-outreach/admission.jpg"
         ]
       },
       {
-        "base": "WhatsApp Image 2025-09-04 at 11.02.53",
+        "base": "culturalday",
         "files": [
-          "community-outreach/WhatsApp Image 2025-09-04 at 11.02.53-960.webp",
-          "community-outreach/WhatsApp Image 2025-09-04 at 11.02.53-960.jpg",
-          "community-outreach/WhatsApp Image 2025-09-04 at 11.02.53-640.webp",
-          "community-outreach/WhatsApp Image 2025-09-04 at 11.02.53-640.jpg",
-          "community-outreach/WhatsApp Image 2025-09-04 at 11.02.53.webp",
-          "community-outreach/WhatsApp Image 2025-09-04 at 11.02.53.jpg"
+          "community-outreach/culturalday-960.webp",
+          "community-outreach/culturalday-960.jpg",
+          "community-outreach/culturalday-640.webp",
+          "community-outreach/culturalday-640.jpg",
+          "community-outreach/culturalday.webp",
+          "community-outreach/culturalday.jpg"
         ]
       },
       {
-        "base": "WhatsApp Image 2025-09-04 at 11.02.55",
+        "base": "excellency",
         "files": [
-          "community-outreach/WhatsApp Image 2025-09-04 at 11.02.55-960.webp",
-          "community-outreach/WhatsApp Image 2025-09-04 at 11.02.55-960.jpg",
-          "community-outreach/WhatsApp Image 2025-09-04 at 11.02.55-640.webp",
-          "community-outreach/WhatsApp Image 2025-09-04 at 11.02.55-640.jpg",
-          "community-outreach/WhatsApp Image 2025-09-04 at 11.02.55.webp",
-          "community-outreach/WhatsApp Image 2025-09-04 at 11.02.55.jpg"
+          "community-outreach/excellency-640.webp",
+          "community-outreach/excellency-640.jpg",
+          "community-outreach/excellency.webp",
+          "community-outreach/excellency.jpg"
         ]
       },
       {
-        "base": "WhatsApp Image 2025-09-04 at 11.02.56",
+        "base": "secondary-students",
         "files": [
-          "community-outreach/WhatsApp Image 2025-09-04 at 11.02.56-960.webp",
-          "community-outreach/WhatsApp Image 2025-09-04 at 11.02.56-960.jpg",
-          "community-outreach/WhatsApp Image 2025-09-04 at 11.02.56-640.webp",
-          "community-outreach/WhatsApp Image 2025-09-04 at 11.02.56-640.jpg",
-          "community-outreach/WhatsApp Image 2025-09-04 at 11.02.56.webp",
-          "community-outreach/WhatsApp Image 2025-09-04 at 11.02.56.jpg"
+          "community-outreach/secondary-students-960.webp",
+          "community-outreach/secondary-students-960.jpg",
+          "community-outreach/secondary-students-640.webp",
+          "community-outreach/secondary-students-640.jpg",
+          "community-outreach/secondary-students.webp",
+          "community-outreach/secondary-students.jpg"
         ]
       },
       {
-        "base": "WhatsApp Image 2025-09-04 at 11.42.58",
+        "base": "secondary-students1",
         "files": [
-          "community-outreach/WhatsApp Image 2025-09-04 at 11.42.58-960.webp",
-          "community-outreach/WhatsApp Image 2025-09-04 at 11.42.58-960.jpg",
-          "community-outreach/WhatsApp Image 2025-09-04 at 11.42.58-640.webp",
-          "community-outreach/WhatsApp Image 2025-09-04 at 11.42.58-640.jpg",
-          "community-outreach/WhatsApp Image 2025-09-04 at 11.42.58.webp",
-          "community-outreach/WhatsApp Image 2025-09-04 at 11.42.58.jpg"
-        ]
-      },
-      {
-        "base": "WhatsApp Image 2025-09-04 at 11.42.59 (1)",
-        "files": [
-          "community-outreach/WhatsApp Image 2025-09-04 at 11.42.59 (1)-640.webp",
-          "community-outreach/WhatsApp Image 2025-09-04 at 11.42.59 (1)-640.jpg",
-          "community-outreach/WhatsApp Image 2025-09-04 at 11.42.59 (1).webp",
-          "community-outreach/WhatsApp Image 2025-09-04 at 11.42.59 (1).jpg"
-        ]
-      },
-      {
-        "base": "WhatsApp Image 2025-09-04 at 11.42.59 (2)",
-        "files": [
-          "community-outreach/WhatsApp Image 2025-09-04 at 11.42.59 (2)-640.webp",
-          "community-outreach/WhatsApp Image 2025-09-04 at 11.42.59 (2)-640.jpg",
-          "community-outreach/WhatsApp Image 2025-09-04 at 11.42.59 (2).webp",
-          "community-outreach/WhatsApp Image 2025-09-04 at 11.42.59 (2).jpg"
-        ]
-      },
-      {
-        "base": "WhatsApp Image 2025-09-04 at 11.42.59",
-        "files": [
-          "community-outreach/WhatsApp Image 2025-09-04 at 11.42.59-640.webp",
-          "community-outreach/WhatsApp Image 2025-09-04 at 11.42.59-640.jpg",
-          "community-outreach/WhatsApp Image 2025-09-04 at 11.42.59.webp",
-          "community-outreach/WhatsApp Image 2025-09-04 at 11.42.59.jpg"
-        ]
-      },
-      {
-        "base": "WhatsApp Image 2025-09-04 at 11.43.00 (1)",
-        "files": [
-          "community-outreach/WhatsApp Image 2025-09-04 at 11.43.00 (1)-640.webp",
-          "community-outreach/WhatsApp Image 2025-09-04 at 11.43.00 (1)-640.jpg",
-          "community-outreach/WhatsApp Image 2025-09-04 at 11.43.00 (1).webp",
-          "community-outreach/WhatsApp Image 2025-09-04 at 11.43.00 (1).jpg"
-        ]
-      },
-      {
-        "base": "WhatsApp Image 2025-09-04 at 11.43.00",
-        "files": [
-          "community-outreach/WhatsApp Image 2025-09-04 at 11.43.00-960.webp",
-          "community-outreach/WhatsApp Image 2025-09-04 at 11.43.00-960.jpg",
-          "community-outreach/WhatsApp Image 2025-09-04 at 11.43.00-640.webp",
-          "community-outreach/WhatsApp Image 2025-09-04 at 11.43.00-640.jpg",
-          "community-outreach/WhatsApp Image 2025-09-04 at 11.43.00.webp",
-          "community-outreach/WhatsApp Image 2025-09-04 at 11.43.00.jpg"
-        ]
-      },
-      {
-        "base": "WhatsApp Image 2025-09-04 at 11.43.01 (1)",
-        "files": [
-          "community-outreach/WhatsApp Image 2025-09-04 at 11.43.01 (1)-960.webp",
-          "community-outreach/WhatsApp Image 2025-09-04 at 11.43.01 (1)-960.jpg",
-          "community-outreach/WhatsApp Image 2025-09-04 at 11.43.01 (1)-640.webp",
-          "community-outreach/WhatsApp Image 2025-09-04 at 11.43.01 (1)-640.jpg",
-          "community-outreach/WhatsApp Image 2025-09-04 at 11.43.01 (1).webp",
-          "community-outreach/WhatsApp Image 2025-09-04 at 11.43.01 (1).jpg"
-        ]
-      },
-      {
-        "base": "WhatsApp Image 2025-09-04 at 11.43.01 (2)",
-        "files": [
-          "community-outreach/WhatsApp Image 2025-09-04 at 11.43.01 (2)-960.webp",
-          "community-outreach/WhatsApp Image 2025-09-04 at 11.43.01 (2)-960.jpg",
-          "community-outreach/WhatsApp Image 2025-09-04 at 11.43.01 (2)-640.webp",
-          "community-outreach/WhatsApp Image 2025-09-04 at 11.43.01 (2)-640.jpg",
-          "community-outreach/WhatsApp Image 2025-09-04 at 11.43.01 (2).webp",
-          "community-outreach/WhatsApp Image 2025-09-04 at 11.43.01 (2).jpg"
-        ]
-      },
-      {
-        "base": "WhatsApp Image 2025-09-04 at 11.43.01",
-        "files": [
-          "community-outreach/WhatsApp Image 2025-09-04 at 11.43.01-960.webp",
-          "community-outreach/WhatsApp Image 2025-09-04 at 11.43.01-960.jpg",
-          "community-outreach/WhatsApp Image 2025-09-04 at 11.43.01-640.webp",
-          "community-outreach/WhatsApp Image 2025-09-04 at 11.43.01-640.jpg",
-          "community-outreach/WhatsApp Image 2025-09-04 at 11.43.01.webp",
-          "community-outreach/WhatsApp Image 2025-09-04 at 11.43.01.jpg"
-        ]
-      },
-      {
-        "base": "WhatsApp Image 2025-09-05 at 15.11.21",
-        "files": [
-          "community-outreach/WhatsApp Image 2025-09-05 at 15.11.21-960.webp",
-          "community-outreach/WhatsApp Image 2025-09-05 at 15.11.21-960.jpg",
-          "community-outreach/WhatsApp Image 2025-09-05 at 15.11.21-640.webp",
-          "community-outreach/WhatsApp Image 2025-09-05 at 15.11.21-640.jpg",
-          "community-outreach/WhatsApp Image 2025-09-05 at 15.11.21.webp",
-          "community-outreach/WhatsApp Image 2025-09-05 at 15.11.21.jpg"
-        ]
-      },
-      {
-        "base": "campus-hero",
-        "files": [
-          "community-outreach/campus-hero-1920.webp",
-          "community-outreach/campus-hero-1920.jpg",
-          "community-outreach/campus-hero-1280.webp",
-          "community-outreach/campus-hero-1280.jpg",
-          "community-outreach/campus-hero-960.webp",
-          "community-outreach/campus-hero-960.jpg",
-          "community-outreach/campus-hero-640.webp",
-          "community-outreach/campus-hero-640.jpg",
-          "community-outreach/campus-hero.webp",
-          "community-outreach/campus-hero.jpg"
-        ]
-      },
-      {
-        "base": "e30b117a-3b33-4063-8297-2193e3b7ef83",
-        "files": [
-          "community-outreach/e30b117a-3b33-4063-8297-2193e3b7ef83-960.webp",
-          "community-outreach/e30b117a-3b33-4063-8297-2193e3b7ef83-960.jpg",
-          "community-outreach/e30b117a-3b33-4063-8297-2193e3b7ef83-640.webp",
-          "community-outreach/e30b117a-3b33-4063-8297-2193e3b7ef83-640.jpg",
-          "community-outreach/e30b117a-3b33-4063-8297-2193e3b7ef83.webp",
-          "community-outreach/e30b117a-3b33-4063-8297-2193e3b7ef83.jpg"
-        ]
-      },
-      {
-        "base": "efe6e09b-49d8-4043-b20a-be02c5a0022f",
-        "files": [
-          "community-outreach/efe6e09b-49d8-4043-b20a-be02c5a0022f-1280.webp",
-          "community-outreach/efe6e09b-49d8-4043-b20a-be02c5a0022f-1280.jpg",
-          "community-outreach/efe6e09b-49d8-4043-b20a-be02c5a0022f-960.webp",
-          "community-outreach/efe6e09b-49d8-4043-b20a-be02c5a0022f-960.jpg",
-          "community-outreach/efe6e09b-49d8-4043-b20a-be02c5a0022f-640.webp",
-          "community-outreach/efe6e09b-49d8-4043-b20a-be02c5a0022f-640.jpg",
-          "community-outreach/efe6e09b-49d8-4043-b20a-be02c5a0022f.webp",
-          "community-outreach/efe6e09b-49d8-4043-b20a-be02c5a0022f.jpg"
+          "community-outreach/secondary-students1-640.webp",
+          "community-outreach/secondary-students1-640.jpg",
+          "community-outreach/secondary-students1.webp",
+          "community-outreach/secondary-students1.jpg"
         ]
       },
       {
@@ -456,330 +184,525 @@
           "community-outreach/springbase-logo.webp",
           "community-outreach/springbase-logo.jpg"
         ]
+      },
+      {
+        "base": "student-life-1",
+        "files": [
+          "community-outreach/student-life-1-960.webp",
+          "community-outreach/student-life-1-960.jpg",
+          "community-outreach/student-life-1-640.webp",
+          "community-outreach/student-life-1-640.jpg",
+          "community-outreach/student-life-1.webp",
+          "community-outreach/student-life-1.jpg"
+        ]
+      },
+      {
+        "base": "students5",
+        "files": [
+          "community-outreach/students5-960.webp",
+          "community-outreach/students5-960.jpg",
+          "community-outreach/students5-640.webp",
+          "community-outreach/students5-640.jpg",
+          "community-outreach/students5.webp",
+          "community-outreach/students5.jpg"
+        ]
+      },
+      {
+        "base": "students7",
+        "files": [
+          "community-outreach/students7-640.webp",
+          "community-outreach/students7-640.jpg",
+          "community-outreach/students7.webp",
+          "community-outreach/students7.jpg"
+        ]
       }
     ],
-    "staff": [
+    "classrooms": [
       {
-        "base": "8eada9e5-e533-4600-a46a-e0bde3af260a",
+        "base": "IMG-20251004-WA0030",
         "files": [
-          "staff/8eada9e5-e533-4600-a46a-e0bde3af260a-960.webp",
-          "staff/8eada9e5-e533-4600-a46a-e0bde3af260a-960.jpg",
-          "staff/8eada9e5-e533-4600-a46a-e0bde3af260a-640.webp",
-          "staff/8eada9e5-e533-4600-a46a-e0bde3af260a-640.jpg",
-          "staff/8eada9e5-e533-4600-a46a-e0bde3af260a.webp",
-          "staff/8eada9e5-e533-4600-a46a-e0bde3af260a.jpg"
+          "classrooms/IMG-20251004-WA0030-960.webp",
+          "classrooms/IMG-20251004-WA0030-960.jpg",
+          "classrooms/IMG-20251004-WA0030-640.webp",
+          "classrooms/IMG-20251004-WA0030-640.jpg",
+          "classrooms/IMG-20251004-WA0030.webp",
+          "classrooms/IMG-20251004-WA0030.jpg"
+        ]
+      },
+      {
+        "base": "IMG-20251004-WA0031",
+        "files": [
+          "classrooms/IMG-20251004-WA0031-960.webp",
+          "classrooms/IMG-20251004-WA0031-960.jpg",
+          "classrooms/IMG-20251004-WA0031-640.webp",
+          "classrooms/IMG-20251004-WA0031-640.jpg",
+          "classrooms/IMG-20251004-WA0031.webp",
+          "classrooms/IMG-20251004-WA0031.jpg"
+        ]
+      },
+      {
+        "base": "IMG-20251004-WA0032",
+        "files": [
+          "classrooms/IMG-20251004-WA0032-960.webp",
+          "classrooms/IMG-20251004-WA0032-960.jpg",
+          "classrooms/IMG-20251004-WA0032-640.webp",
+          "classrooms/IMG-20251004-WA0032-640.jpg",
+          "classrooms/IMG-20251004-WA0032.webp",
+          "classrooms/IMG-20251004-WA0032.jpg"
+        ]
+      },
+      {
+        "base": "IMG-20251004-WA0034",
+        "files": [
+          "classrooms/IMG-20251004-WA0034-960.webp",
+          "classrooms/IMG-20251004-WA0034-960.jpg",
+          "classrooms/IMG-20251004-WA0034-640.webp",
+          "classrooms/IMG-20251004-WA0034-640.jpg",
+          "classrooms/IMG-20251004-WA0034.webp",
+          "classrooms/IMG-20251004-WA0034.jpg"
+        ]
+      },
+      {
+        "base": "IMG-20251004-WA0035",
+        "files": [
+          "classrooms/IMG-20251004-WA0035-960.webp",
+          "classrooms/IMG-20251004-WA0035-960.jpg",
+          "classrooms/IMG-20251004-WA0035-640.webp",
+          "classrooms/IMG-20251004-WA0035-640.jpg",
+          "classrooms/IMG-20251004-WA0035.webp",
+          "classrooms/IMG-20251004-WA0035.jpg"
+        ]
+      },
+      {
+        "base": "classroom-3",
+        "files": [
+          "classrooms/classroom-3-960.webp",
+          "classrooms/classroom-3-960.jpg",
+          "classrooms/classroom-3-640.webp",
+          "classrooms/classroom-3-640.jpg",
+          "classrooms/classroom-3.webp",
+          "classrooms/classroom-3.jpg"
+        ]
+      },
+      {
+        "base": "classroom",
+        "files": [
+          "classrooms/classroom-960.webp",
+          "classrooms/classroom-960.jpg",
+          "classrooms/classroom-640.webp",
+          "classrooms/classroom-640.jpg",
+          "classrooms/classroom.webp",
+          "classrooms/classroom.jpg"
+        ]
+      },
+      {
+        "base": "studlife",
+        "files": [
+          "classrooms/studlife-1920.webp",
+          "classrooms/studlife-1920.jpg",
+          "classrooms/studlife-1280.webp",
+          "classrooms/studlife-1280.jpg",
+          "classrooms/studlife-960.webp",
+          "classrooms/studlife-960.jpg",
+          "classrooms/studlife-640.webp",
+          "classrooms/studlife-640.jpg",
+          "classrooms/studlife.webp",
+          "classrooms/studlife.jpg"
+        ]
+      },
+      {
+        "base": "stulife",
+        "files": [
+          "classrooms/stulife-960.webp",
+          "classrooms/stulife-960.jpg",
+          "classrooms/stulife-640.webp",
+          "classrooms/stulife-640.jpg",
+          "classrooms/stulife.webp",
+          "classrooms/stulife.jpg"
+        ]
+      }
+    ],
+    "celebrations": [
+      {
+        "base": "celebr",
+        "files": [
+          "celebrations/celebr-1280.webp",
+          "celebrations/celebr-1280.jpg",
+          "celebrations/celebr-960.webp",
+          "celebrations/celebr-960.jpg",
+          "celebrations/celebr-640.webp",
+          "celebrations/celebr-640.jpg",
+          "celebrations/celebr.webp",
+          "celebrations/celebr.jpg"
+        ]
+      },
+      {
+        "base": "celebration-2",
+        "files": [
+          "celebrations/celebration-2-960.webp",
+          "celebrations/celebration-2-960.jpg",
+          "celebrations/celebration-2-640.webp",
+          "celebrations/celebration-2-640.jpg",
+          "celebrations/celebration-2.webp",
+          "celebrations/celebration-2.jpg"
+        ]
+      },
+      {
+        "base": "celebration-4",
+        "files": [
+          "celebrations/celebration-4-960.webp",
+          "celebrations/celebration-4-960.jpg",
+          "celebrations/celebration-4-640.webp",
+          "celebrations/celebration-4-640.jpg",
+          "celebrations/celebration-4.webp",
+          "celebrations/celebration-4.jpg"
+        ]
+      },
+      {
+        "base": "celebration",
+        "files": [
+          "celebrations/celebration-960.webp",
+          "celebrations/celebration-960.jpg",
+          "celebrations/celebration-640.webp",
+          "celebrations/celebration-640.jpg",
+          "celebrations/celebration.webp",
+          "celebrations/celebration.jpg"
+        ]
+      },
+      {
+        "base": "celebration6",
+        "files": [
+          "celebrations/celebration6-960.webp",
+          "celebrations/celebration6-960.jpg",
+          "celebrations/celebration6-640.webp",
+          "celebrations/celebration6-640.jpg",
+          "celebrations/celebration6.webp",
+          "celebrations/celebration6.jpg"
+        ]
+      },
+      {
+        "base": "celebration7",
+        "files": [
+          "celebrations/celebration7-1280.webp",
+          "celebrations/celebration7-1280.jpg",
+          "celebrations/celebration7-960.webp",
+          "celebrations/celebration7-960.jpg",
+          "celebrations/celebration7-640.webp",
+          "celebrations/celebration7-640.jpg",
+          "celebrations/celebration7.webp",
+          "celebrations/celebration7.jpg"
+        ]
+      },
+      {
+        "base": "promotion",
+        "files": [
+          "celebrations/promotion-960.webp",
+          "celebrations/promotion-960.jpg",
+          "celebrations/promotion-640.webp",
+          "celebrations/promotion-640.jpg",
+          "celebrations/promotion.webp",
+          "celebrations/promotion.jpg"
         ]
       }
     ],
     "science-lab": [
       {
-        "base": "IMG_1502",
-        "files": []
-      },
-      {
-        "base": "IMG_1709",
+        "base": "computer-facility",
         "files": [
-          "science-lab/IMG_1709-1920.webp",
-          "science-lab/IMG_1709-1920.jpg",
-          "science-lab/IMG_1709-1280.webp",
-          "science-lab/IMG_1709-1280.jpg",
-          "science-lab/IMG_1709-960.webp",
-          "science-lab/IMG_1709-960.jpg",
-          "science-lab/IMG_1709-640.webp",
-          "science-lab/IMG_1709-640.jpg",
-          "science-lab/IMG_1709.webp",
-          "science-lab/IMG_1709.jpg"
+          "science-lab/computer-facility-1920.webp",
+          "science-lab/computer-facility-1920.jpg",
+          "science-lab/computer-facility-1280.webp",
+          "science-lab/computer-facility-1280.jpg",
+          "science-lab/computer-facility-960.webp",
+          "science-lab/computer-facility-960.jpg",
+          "science-lab/computer-facility-640.webp",
+          "science-lab/computer-facility-640.jpg",
+          "science-lab/computer-facility.webp",
+          "science-lab/computer-facility.jpg"
         ]
       },
       {
-        "base": "IMG_1711",
+        "base": "computer-lab",
         "files": [
-          "science-lab/IMG_1711-1920.webp",
-          "science-lab/IMG_1711-1920.jpg",
-          "science-lab/IMG_1711-1280.webp",
-          "science-lab/IMG_1711-1280.jpg",
-          "science-lab/IMG_1711-960.webp",
-          "science-lab/IMG_1711-960.jpg",
-          "science-lab/IMG_1711-640.webp",
-          "science-lab/IMG_1711-640.jpg",
-          "science-lab/IMG_1711.webp",
-          "science-lab/IMG_1711.jpg"
+          "science-lab/computer-lab-1920.webp",
+          "science-lab/computer-lab-1920.jpg",
+          "science-lab/computer-lab-1280.webp",
+          "science-lab/computer-lab-1280.jpg",
+          "science-lab/computer-lab-960.webp",
+          "science-lab/computer-lab-960.jpg",
+          "science-lab/computer-lab-640.webp",
+          "science-lab/computer-lab-640.jpg",
+          "science-lab/computer-lab.webp",
+          "science-lab/computer-lab.jpg"
         ]
       },
       {
-        "base": "IMG_1721",
+        "base": "lab-day",
         "files": [
-          "science-lab/IMG_1721-1920.webp",
-          "science-lab/IMG_1721-1920.jpg",
-          "science-lab/IMG_1721-1280.webp",
-          "science-lab/IMG_1721-1280.jpg",
-          "science-lab/IMG_1721-960.webp",
-          "science-lab/IMG_1721-960.jpg",
-          "science-lab/IMG_1721-640.webp",
-          "science-lab/IMG_1721-640.jpg",
-          "science-lab/IMG_1721.webp",
-          "science-lab/IMG_1721.jpg"
+          "science-lab/lab-day-1920.webp",
+          "science-lab/lab-day-1920.jpg",
+          "science-lab/lab-day-1280.webp",
+          "science-lab/lab-day-1280.jpg",
+          "science-lab/lab-day-960.webp",
+          "science-lab/lab-day-960.jpg",
+          "science-lab/lab-day-640.webp",
+          "science-lab/lab-day-640.jpg",
+          "science-lab/lab-day.webp",
+          "science-lab/lab-day.jpg"
         ]
       },
       {
-        "base": "IMG_1752",
-        "files": []
+        "base": "lab-image",
+        "files": [
+          "science-lab/lab-image-960.webp",
+          "science-lab/lab-image-960.jpg",
+          "science-lab/lab-image-640.webp",
+          "science-lab/lab-image-640.jpg",
+          "science-lab/lab-image.webp",
+          "science-lab/lab-image.jpg"
+        ]
       },
       {
-        "base": "IMG_1753",
-        "files": []
+        "base": "lab-studies",
+        "files": [
+          "science-lab/lab-studies-1920.webp",
+          "science-lab/lab-studies-1920.jpg",
+          "science-lab/lab-studies-1280.webp",
+          "science-lab/lab-studies-1280.jpg",
+          "science-lab/lab-studies-960.webp",
+          "science-lab/lab-studies-960.jpg",
+          "science-lab/lab-studies-640.webp",
+          "science-lab/lab-studies-640.jpg",
+          "science-lab/lab-studies.webp",
+          "science-lab/lab-studies.jpg"
+        ]
       },
       {
-        "base": "IMG_1754",
-        "files": []
-      },
-      {
-        "base": "IMG_1755",
-        "files": []
-      },
-      {
-        "base": "IMG_1756",
-        "files": []
-      },
-      {
-        "base": "IMG_1757",
-        "files": []
-      },
-      {
-        "base": "IMG_1758",
-        "files": []
-      },
-      {
-        "base": "IMG_1759",
-        "files": []
-      },
-      {
-        "base": "IMG_1760",
-        "files": []
-      },
-      {
-        "base": "IMG_1761",
-        "files": []
-      },
-      {
-        "base": "IMG_1762",
-        "files": []
-      },
-      {
-        "base": "IMG_1763",
-        "files": []
-      },
-      {
-        "base": "IMG_1764",
-        "files": []
-      },
-      {
-        "base": "IMG_1765",
-        "files": []
-      },
-      {
-        "base": "IMG_1766",
-        "files": []
-      },
-      {
-        "base": "IMG_1767",
-        "files": []
-      },
-      {
-        "base": "IMG_1768",
-        "files": []
-      },
-      {
-        "base": "IMG_1769",
-        "files": []
-      },
-      {
-        "base": "IMG_1770",
-        "files": []
-      },
-      {
-        "base": "IMG_1771",
-        "files": []
-      },
-      {
-        "base": "IMG_1772",
-        "files": []
-      },
-      {
-        "base": "IMG_1773",
-        "files": []
-      },
-      {
-        "base": "IMG_1774",
-        "files": []
-      },
-      {
-        "base": "IMG_1775",
-        "files": []
-      },
-      {
-        "base": "IMG_1776",
-        "files": []
-      },
-      {
-        "base": "IMG_1777",
-        "files": []
-      },
-      {
-        "base": "IMG_1778",
-        "files": []
-      },
-      {
-        "base": "IMG_1779",
-        "files": []
-      },
-      {
-        "base": "IMG_1780",
-        "files": []
-      },
-      {
-        "base": "IMG_1781",
-        "files": []
-      },
-      {
-        "base": "IMG_1782",
-        "files": []
-      },
-      {
-        "base": "IMG_1783",
-        "files": []
-      },
-      {
-        "base": "IMG_1784",
-        "files": []
-      },
-      {
-        "base": "IMG_1785",
-        "files": []
-      },
-      {
-        "base": "IMG_1786",
-        "files": []
-      },
-      {
-        "base": "IMG_1787",
-        "files": []
-      },
-      {
-        "base": "IMG_1788",
-        "files": []
-      },
-      {
-        "base": "IMG_1789",
-        "files": []
-      },
-      {
-        "base": "IMG_1790",
-        "files": []
-      },
-      {
-        "base": "IMG_1791",
-        "files": []
-      },
-      {
-        "base": "IMG_1792",
-        "files": []
-      },
-      {
-        "base": "IMG_1793",
-        "files": []
-      },
-      {
-        "base": "IMG_1794",
-        "files": []
-      },
-      {
-        "base": "IMG_1795",
-        "files": []
-      },
-      {
-        "base": "IMG_1796",
-        "files": []
-      },
-      {
-        "base": "IMG_1797",
-        "files": []
-      },
-      {
-        "base": "IMG_1798",
-        "files": []
-      },
-      {
-        "base": "IMG_1799",
-        "files": []
-      },
-      {
-        "base": "IMG_1800",
-        "files": []
-      },
-      {
-        "base": "IMG_1801",
-        "files": []
-      },
-      {
-        "base": "IMG_1802",
-        "files": []
-      },
-      {
-        "base": "IMG_1803",
-        "files": []
-      },
-      {
-        "base": "IMG_1804",
-        "files": []
-      },
-      {
-        "base": "IMG_1805",
-        "files": []
-      },
-      {
-        "base": "IMG_1806",
-        "files": []
-      },
-      {
-        "base": "IMG_1807",
-        "files": []
-      },
-      {
-        "base": "IMG_1808",
-        "files": []
-      },
-      {
-        "base": "IMG_1809",
-        "files": []
-      },
-      {
-        "base": "IMG_1810",
-        "files": []
-      },
-      {
-        "base": "IMG_1811",
-        "files": []
-      },
-      {
-        "base": "IMG_1812",
-        "files": []
+        "base": "utilities",
+        "files": [
+          "science-lab/utilities-1920.webp",
+          "science-lab/utilities-1920.jpg",
+          "science-lab/utilities-1280.webp",
+          "science-lab/utilities-1280.jpg",
+          "science-lab/utilities-960.webp",
+          "science-lab/utilities-960.jpg",
+          "science-lab/utilities-640.webp",
+          "science-lab/utilities-640.jpg",
+          "science-lab/utilities.webp",
+          "science-lab/utilities.jpg"
+        ]
       }
     ],
-    "parade": [
+    "campus-tour": [
       {
-        "base": "c3fc96ba-e12b-42dc-9dff-1fe09753a95b",
+        "base": "facilities",
         "files": [
-          "parade/c3fc96ba-e12b-42dc-9dff-1fe09753a95b-1920.webp",
-          "parade/c3fc96ba-e12b-42dc-9dff-1fe09753a95b-1920.jpg",
-          "parade/c3fc96ba-e12b-42dc-9dff-1fe09753a95b-1280.webp",
-          "parade/c3fc96ba-e12b-42dc-9dff-1fe09753a95b-1280.jpg",
-          "parade/c3fc96ba-e12b-42dc-9dff-1fe09753a95b-960.webp",
-          "parade/c3fc96ba-e12b-42dc-9dff-1fe09753a95b-960.jpg",
-          "parade/c3fc96ba-e12b-42dc-9dff-1fe09753a95b-640.webp",
-          "parade/c3fc96ba-e12b-42dc-9dff-1fe09753a95b-640.jpg",
-          "parade/c3fc96ba-e12b-42dc-9dff-1fe09753a95b.webp",
-          "parade/c3fc96ba-e12b-42dc-9dff-1fe09753a95b.jpg"
+          "campus-tour/facilities-1920.webp",
+          "campus-tour/facilities-1920.jpg",
+          "campus-tour/facilities-1280.webp",
+          "campus-tour/facilities-1280.jpg",
+          "campus-tour/facilities-960.webp",
+          "campus-tour/facilities-960.jpg",
+          "campus-tour/facilities-640.webp",
+          "campus-tour/facilities-640.jpg",
+          "campus-tour/facilities.webp",
+          "campus-tour/facilities.jpg"
+        ]
+      },
+      {
+        "base": "hall-1",
+        "files": [
+          "campus-tour/hall-1-1920.webp",
+          "campus-tour/hall-1-1920.jpg",
+          "campus-tour/hall-1-1280.webp",
+          "campus-tour/hall-1-1280.jpg",
+          "campus-tour/hall-1-960.webp",
+          "campus-tour/hall-1-960.jpg",
+          "campus-tour/hall-1-640.webp",
+          "campus-tour/hall-1-640.jpg",
+          "campus-tour/hall-1.webp",
+          "campus-tour/hall-1.jpg"
+        ]
+      },
+      {
+        "base": "hall",
+        "files": [
+          "campus-tour/hall-1920.webp",
+          "campus-tour/hall-1920.jpg",
+          "campus-tour/hall-1280.webp",
+          "campus-tour/hall-1280.jpg",
+          "campus-tour/hall-960.webp",
+          "campus-tour/hall-960.jpg",
+          "campus-tour/hall-640.webp",
+          "campus-tour/hall-640.jpg",
+          "campus-tour/hall.webp",
+          "campus-tour/hall.jpg"
+        ]
+      },
+      {
+        "base": "overview",
+        "files": [
+          "campus-tour/overview-1920.webp",
+          "campus-tour/overview-1920.jpg",
+          "campus-tour/overview-1280.webp",
+          "campus-tour/overview-1280.jpg",
+          "campus-tour/overview-960.webp",
+          "campus-tour/overview-960.jpg",
+          "campus-tour/overview-640.webp",
+          "campus-tour/overview-640.jpg",
+          "campus-tour/overview.webp",
+          "campus-tour/overview.jpg"
+        ]
+      },
+      {
+        "base": "pri-recreation",
+        "files": [
+          "campus-tour/pri-recreation-1920.webp",
+          "campus-tour/pri-recreation-1920.jpg",
+          "campus-tour/pri-recreation-1280.webp",
+          "campus-tour/pri-recreation-1280.jpg",
+          "campus-tour/pri-recreation-960.webp",
+          "campus-tour/pri-recreation-960.jpg",
+          "campus-tour/pri-recreation-640.webp",
+          "campus-tour/pri-recreation-640.jpg",
+          "campus-tour/pri-recreation.webp",
+          "campus-tour/pri-recreation.jpg"
+        ]
+      },
+      {
+        "base": "primary-school-1",
+        "files": [
+          "campus-tour/primary-school-1-1920.webp",
+          "campus-tour/primary-school-1-1920.jpg",
+          "campus-tour/primary-school-1-1280.webp",
+          "campus-tour/primary-school-1-1280.jpg",
+          "campus-tour/primary-school-1-960.webp",
+          "campus-tour/primary-school-1-960.jpg",
+          "campus-tour/primary-school-1-640.webp",
+          "campus-tour/primary-school-1-640.jpg",
+          "campus-tour/primary-school-1.webp",
+          "campus-tour/primary-school-1.jpg"
+        ]
+      },
+      {
+        "base": "primary-school-2",
+        "files": [
+          "campus-tour/primary-school-2-1920.webp",
+          "campus-tour/primary-school-2-1920.jpg",
+          "campus-tour/primary-school-2-1280.webp",
+          "campus-tour/primary-school-2-1280.jpg",
+          "campus-tour/primary-school-2-960.webp",
+          "campus-tour/primary-school-2-960.jpg",
+          "campus-tour/primary-school-2-640.webp",
+          "campus-tour/primary-school-2-640.jpg",
+          "campus-tour/primary-school-2.webp",
+          "campus-tour/primary-school-2.jpg"
+        ]
+      },
+      {
+        "base": "primary-students",
+        "files": [
+          "campus-tour/primary-students-960.webp",
+          "campus-tour/primary-students-960.jpg",
+          "campus-tour/primary-students-640.webp",
+          "campus-tour/primary-students-640.jpg",
+          "campus-tour/primary-students.webp",
+          "campus-tour/primary-students.jpg"
+        ]
+      },
+      {
+        "base": "primary-students1",
+        "files": [
+          "campus-tour/primary-students1-960.webp",
+          "campus-tour/primary-students1-960.jpg",
+          "campus-tour/primary-students1-640.webp",
+          "campus-tour/primary-students1-640.jpg",
+          "campus-tour/primary-students1.webp",
+          "campus-tour/primary-students1.jpg"
+        ]
+      },
+      {
+        "base": "primary-tour",
+        "files": [
+          "campus-tour/primary-tour-1920.webp",
+          "campus-tour/primary-tour-1920.jpg",
+          "campus-tour/primary-tour-1280.webp",
+          "campus-tour/primary-tour-1280.jpg",
+          "campus-tour/primary-tour-960.webp",
+          "campus-tour/primary-tour-960.jpg",
+          "campus-tour/primary-tour-640.webp",
+          "campus-tour/primary-tour-640.jpg",
+          "campus-tour/primary-tour.webp",
+          "campus-tour/primary-tour.jpg"
+        ]
+      },
+      {
+        "base": "recreation-1",
+        "files": [
+          "campus-tour/recreation-1-1920.webp",
+          "campus-tour/recreation-1-1920.jpg",
+          "campus-tour/recreation-1-1280.webp",
+          "campus-tour/recreation-1-1280.jpg",
+          "campus-tour/recreation-1-960.webp",
+          "campus-tour/recreation-1-960.jpg",
+          "campus-tour/recreation-1-640.webp",
+          "campus-tour/recreation-1-640.jpg",
+          "campus-tour/recreation-1.webp",
+          "campus-tour/recreation-1.jpg"
+        ]
+      },
+      {
+        "base": "recreation",
+        "files": [
+          "campus-tour/recreation-1920.webp",
+          "campus-tour/recreation-1920.jpg",
+          "campus-tour/recreation-1280.webp",
+          "campus-tour/recreation-1280.jpg",
+          "campus-tour/recreation-960.webp",
+          "campus-tour/recreation-960.jpg",
+          "campus-tour/recreation-640.webp",
+          "campus-tour/recreation-640.jpg",
+          "campus-tour/recreation.webp",
+          "campus-tour/recreation.jpg"
+        ]
+      }
+    ],
+    "sports": [
+      {
+        "base": "sports-1",
+        "files": [
+          "sports/sports-1-960.webp",
+          "sports/sports-1-960.jpg",
+          "sports/sports-1-640.webp",
+          "sports/sports-1-640.jpg",
+          "sports/sports-1.webp",
+          "sports/sports-1.jpg"
+        ]
+      },
+      {
+        "base": "sports-2",
+        "files": [
+          "sports/sports-2-960.webp",
+          "sports/sports-2-960.jpg",
+          "sports/sports-2-640.webp",
+          "sports/sports-2-640.jpg",
+          "sports/sports-2.webp",
+          "sports/sports-2.jpg"
+        ]
+      }
+    ],
+    "staff": [
+      {
+        "base": "teachers",
+        "files": [
+          "staff/teachers-1280.webp",
+          "staff/teachers-1280.jpg",
+          "staff/teachers-960.webp",
+          "staff/teachers-960.jpg",
+          "staff/teachers-640.webp",
+          "staff/teachers-640.jpg",
+          "staff/teachers.webp",
+          "staff/teachers.jpg"
         ]
       }
     ]

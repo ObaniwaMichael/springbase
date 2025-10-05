@@ -2,11 +2,12 @@ import PageLayout from "@/components/PageLayout";
 import PlaceholderSection from "@/components/PlaceholderSection";
 import StudentLife from "@/components/StudentLife";
 import ImageGallery from "@/components/ImageGallery";
-import Img0045 from "@/assets/IMG-20250811-WA0045.jpg";
-import Img0049 from "@/assets/IMG-20250811-WA0049.jpg";
-import Img0050 from "@/assets/IMG-20250811-WA0050.jpg";
-import Img0052 from "@/assets/IMG-20250811-WA0052.jpg";
-import Img0053 from "@/assets/IMG-20250811-WA0053.jpg";
+import Celebr from "@/assets/celebr.jpg";
+import Celebration from "@/assets/celebration.jpg";
+import Celebration2 from "@/assets/celebration-2.jpg";
+import Celebration4 from "@/assets/celebration-4.jpg";
+import Celebration6 from "@/assets/celebration6.jpg";
+import Celebration7 from "@/assets/celebration7.jpg";
 
 const StudentLifePage = () => {
   return (
@@ -20,7 +21,7 @@ const StudentLifePage = () => {
           <ImageGallery 
             title="Student Activities & Events" 
             description="Capturing memorable moments from school events and celebrations"
-            images={[Img0045, Img0049, Img0050, Img0052, Img0053]}
+            images={[Celebr, Celebration, Celebration2, Celebration4, Celebration6, Celebration7]}
             columns={3}
             aspectRatio="square"
           />

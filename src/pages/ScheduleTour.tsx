@@ -8,9 +8,19 @@ import { Textarea } from "@/components/ui/textarea";
 import { useState } from "react";
 import Turnstile from "@/components/Turnstile";
 import { useToast } from "@/components/ui/use-toast";
+import ImageGallery from "@/components/ImageGallery";
+import { useNavigate } from "react-router-dom";
+import { Building, ArrowRight, School2 } from "lucide-react";
+import Overview from "@/assets/overview.png";
+import PrimarySchool1 from "@/assets/primary-school-1.png";
+import PrimarySchool2 from "@/assets/primary-school-2.png";
+import PrimaryTour from "@/assets/primary-tour.png";
+import PriRecreation from "@/assets/pri-recreation.png";
+import SchoolBus from "@/assets/school-view.png";
 
 const ScheduleTourPage = () => {
   const { toast } = useToast();
+  const navigate = useNavigate();
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   async function handleSubmit(e) {
@@ -75,7 +85,41 @@ const ScheduleTourPage = () => {
 
   return (
     <PageLayout title="Schedule a Campus Tour" subtitle="Pick a preferred day and time. We'll confirm availability.">
-      <Card className="bg-card border-0">
+      <div className="space-y-12">
+        {/* Campus Tour Gallery */}
+        <div className="bg-gradient-to-br from-sage/5 to-lotus/5 py-8 rounded-3xl">
+          <ImageGallery 
+            title="Campus Tour Preview" 
+            description="Take a virtual tour of our beautiful campus and facilities"
+            images={[
+              { src: Overview, alt: "School building exterior overview", caption: "Main school complex" },
+              { src: PrimarySchool1, alt: "Primary school block walkway and railings", caption: "Primary block" },
+              { src: PrimarySchool2, alt: "Primary classroom windows and architecture", caption: "Campus architecture" },
+              { src: PrimaryTour, alt: "Campus tour snapshots around the school", caption: "Campus tour" },
+              { src: PriRecreation, alt: "Pupils recreation area inside classroom", caption: "Activity area" }
+            ]}
+            columns={3}
+            aspectRatio="square"
+          />
+          
+          {/* Virtual Tour Button */}
+          <div className="text-center mt-8">
+            <Button
+              onClick={() => navigate('/gallery?album=campus-tour')}
+              size="lg"
+              className="bg-sage hover:bg-sage/90 text-white px-4 py-3 md:px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 w-full sm:w-auto"
+            >
+              <Building className="h-4 w-4 md:h-5 md:w-5 mr-2" />
+              <span className="text-sm md:text-base">Explore Full Campus Gallery</span>
+              <ArrowRight className="h-4 w-4 md:h-5 md:w-5 ml-2" />
+            </Button>
+            <p className="text-sm text-muted-foreground mt-3">
+              View all campus images and facilities in our comprehensive gallery
+            </p>
+          </div>
+        </div>
+
+        <Card className="bg-card border-0">
         <CardHeader>
           <CardTitle>Tour Request Form</CardTitle>
         </CardHeader>
@@ -132,7 +176,8 @@ const ScheduleTourPage = () => {
             </Button>
           </form>
         </CardContent>
-      </Card>
+        </Card>
+      </div>
     </PageLayout>
   );
 };

@@ -10,9 +10,6 @@ const PlaceholderSection = ({ heading, description }: PlaceholderSectionProps) =
       {description ? (
         <p className="mt-2 text-muted-foreground">{description}</p>
       ) : null}
-      <p className="mt-4 text-sm text-muted-foreground">
-        Replace this placeholder with real content.
-      </p>
     </div>
   );
 };

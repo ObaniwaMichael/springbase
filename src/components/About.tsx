@@ -1,27 +1,37 @@
-import { Flower, Target, Heart, Star } from "lucide-react";
+import { Flower, Target, Heart, Star, Clock, Lightbulb, Users } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 const About = () => {
   const values = [
     {
       icon: <Heart className="h-8 w-8 text-lotus" />,
-      title: "Godliness & Care",
-      description: "We cultivate godly character, empathy, and genuine care for others in daily learning."
+      title: "GODLINESS",
+      description: "We cultivate godly character and moral values in all our students, fostering spiritual growth and ethical behavior."
     },
     {
-      icon: <Target className="h-8 w-8 text-sage" />,
-      title: "Academic Excellence",
-      description: "A citadel of excellence where high expectations meet effective teaching and support."
+      icon: <Heart className="h-8 w-8 text-sage" />,
+      title: "RESPECT/CARE",
+      description: "We model mutual respect and genuine care for others, creating a nurturing environment where everyone feels valued."
     },
     {
-      icon: <Flower className="h-8 w-8 text-lotus" />,
-      title: "Respect & Creativity",
-      description: "We model mutual respect and inspire creativity through hands‑on, joyful learning."
+      icon: <Star className="h-8 w-8 text-lotus" />,
+      title: "EXCELLENCE",
+      description: "We strive for the highest standards in academics, character, and service, encouraging students to reach their full potential."
     },
     {
-      icon: <Star className="h-8 w-8 text-sage" />,
-      title: "Leadership Responsibility",
-      description: "Learners are guided to take responsibility and lead with integrity in school and beyond."
+      icon: <Clock className="h-8 w-8 text-sage" />,
+      title: "PUNCTUALITY",
+      description: "We value time management and punctuality as essential life skills that build discipline and reliability."
+    },
+    {
+      icon: <Lightbulb className="h-8 w-8 text-lotus" />,
+      title: "CREATIVITY",
+      description: "We inspire innovative thinking and creative expression through hands-on learning and artistic exploration."
+    },
+    {
+      icon: <Users className="h-8 w-8 text-sage" />,
+      title: "TEAM SPIRIT",
+      description: "We foster collaboration and teamwork, teaching students to work together towards common goals and shared success."
     }
   ];
 
@@ -53,6 +63,23 @@ const About = () => {
           </Card>
         </div>
 
+        {/* Vision Statement */}
+        <div className="mb-16 slide-up">
+          <Card className="card-elegant bg-card border-0">
+            <CardContent className="p-8 lg:p-12 text-center">
+              <div className="w-16 h-16 mx-auto mb-6 rounded-full sage-gradient flex items-center justify-center">
+                <Target className="h-8 w-8 text-white" />
+              </div>
+              <h3 className="text-2xl lg:text-3xl font-heading font-bold text-charcoal mb-4">
+                Our Vision
+              </h3>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                To nurture a total child with sound morals, capacity to lead and function globally.
+              </p>
+            </CardContent>
+          </Card>
+        </div>
+
         {/* Mission Statement */}
         <div className="mb-16 slide-up">
           <Card className="card-elegant bg-card border-0">
@@ -64,16 +91,18 @@ const About = () => {
                 Our Mission
               </h3>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                To cultivate an environment where knowledge and greatness flourish together, 
-                empowering students to become confident, compassionate, and capable leaders 
-                who positively impact their communities and the world.
+                To provide a life long qualitative education in a friendly and conducive environment for effective leadership.
               </p>
             </CardContent>
           </Card>
         </div>
 
-        {/* Values Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {/* Core Values */}
+        <div className="mb-16">
+          <h3 className="text-3xl font-heading font-bold text-charcoal text-center mb-12">
+            Our Core Values
+          </h3>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {values.map((value, index) => (
             <Card 
               key={index} 
@@ -93,6 +122,7 @@ const About = () => {
               </CardContent>
             </Card>
           ))}
+          </div>
         </div>
 
         {/* Quote Section */}

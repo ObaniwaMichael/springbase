@@ -6,15 +6,22 @@ const Map = () => {
   const schoolLat = 6.5244;
   const schoolLng = 3.3792;
   
-  // Google Maps embed URL
-  const mapUrl = `https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=${schoolLat},${schoolLng}&zoom=15`;
+  // OpenStreetMap embed (no API key required)
+  const delta = 0.01; // bounding box padding
+  const bbox = [
+    schoolLng - delta,
+    schoolLat - delta,
+    schoolLng + delta,
+    schoolLat + delta
+  ].join(',');
+  const mapUrl = `https://www.openstreetmap.org/export/embed.html?bbox=${bbox}&layer=mapnik&marker=${schoolLat},${schoolLng}`;
 
   return (
     <Card className="card-elegant bg-card border-0">
       <CardHeader className="pb-4">
         <CardTitle className="flex items-center gap-2 text-charcoal">
           <MapPin className="h-5 w-5 text-sage" />
-          Visit Our Campus
+          Our Location
         </CardTitle>
       </CardHeader>
       <CardContent className="p-0">
@@ -29,7 +36,7 @@ const Map = () => {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Springbase School Location"
+              title="Springbase School Location Map"
               className="w-full h-full"
             />
           </div>

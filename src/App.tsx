@@ -6,6 +6,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
+import ScrollToTop from "./components/ScrollToTop";
+import LoadingSpinner from "./components/LoadingSpinner";
+import PerformanceMonitor from "./components/PerformanceMonitor";
 import { lazy, Suspense } from "react";
 const AboutPage = lazy(() => import("./pages/About"));
 const ProgramsPage = lazy(() => import("./pages/Programs"));
@@ -25,7 +28,11 @@ const App = () => (
         <Toaster />
         <Sonner />
         <BrowserRouter>
-          <Suspense fallback={<div className="pt-28 text-center text-muted-foreground">Loading...</div>}>
+          <Suspense fallback={
+            <div className="min-h-screen flex items-center justify-center">
+              <LoadingSpinner size="lg" text="Loading Springbase Schools..." />
+            </div>
+          }>
             <Routes>
               <Route path="/" element={<Index />} />
               <Route path="/about" element={<AboutPage />} />
@@ -39,6 +46,8 @@ const App = () => (
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
+            <ScrollToTop />
+            <PerformanceMonitor />
           </Suspense>
         </BrowserRouter>
       </TooltipProvider>

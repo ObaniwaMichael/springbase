@@ -144,9 +144,9 @@ const Contact = () => {
                         </h4>
                         <p className="text-muted-foreground">{info.details}</p>
                         {info.secondary && (
-                          <p className="text-muted-foreground text-sm mt-1">
+                          <div className="text-muted-foreground text-sm mt-1">
                             {info.secondary}
-                          </p>
+                          </div>
                         )}
                       </div>
                     </div>

@@ -1,10 +1,11 @@
-import { Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
+import { Mail, Phone, MapPin, Facebook, Twitter, Instagram, MessageCircle } from "lucide-react";
 import springbaseLogo from "@/assets/springbase-logo.png";
 import { useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { getApiUrl } from "@/lib/api";
 import { config } from "@/lib/config";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const [email, setEmail] = useState("");
@@ -12,28 +13,28 @@ const Footer = () => {
   const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
 
   const quickLinks = [
-    { name: "About Us", href: "#about" },
-    { name: "Academic Programs", href: "#programs" },
-    { name: "Admissions", href: "#admissions" },
-    { name: "Student Life", href: "#student-life" },
-    { name: "Facilities", href: "#facilities" },
-    { name: "Contact", href: "#contact" }
+    { name: "About Us", href: "/about" },
+    { name: "Academic Programs", href: "/programs" },
+    { name: "Admissions", href: "/admissions" },
+    { name: "Student Life", href: "/student-life" },
+    { name: "Facilities", href: "/facilities" },
+    { name: "Contact", href: "/contact" }
   ];
 
   const resources = [
-    { name: "Parent Portal", href: "#" },
-    { name: "Student Portal", href: "#" },
-    { name: "Academic Calendar", href: "#" },
-    { name: "Faculty Directory", href: "#" },
-    { name: "News & Events", href: "#" },
-    { name: "Alumni Network", href: "#" }
+    { name: "Parent Portal", href: "/parents" },
+    { name: "Student Portal", href: "/students" },
+    { name: "Academic Calendar", href: "/calendar" },
+    { name: "Faculty Directory", href: "/faculty" },
+    { name: "News & Events", href: "/news" },
+    { name: "Alumni Network", href: "/alumni" }
   ];
 
   const socialLinks = [
     { icon: <Facebook className="h-5 w-5" />, href: "#", label: "Facebook" },
     { icon: <Twitter className="h-5 w-5" />, href: "#", label: "Twitter" },
     { icon: <Instagram className="h-5 w-5" />, href: "#", label: "Instagram" },
-    { icon: <Linkedin className="h-5 w-5" />, href: "#", label: "LinkedIn" }
+    { icon: <MessageCircle className="h-5 w-5" />, href: "https://wa.me/2347067285710", label: "WhatsApp" }
   ];
 
   async function handleSubscribe(e: React.FormEvent) {
@@ -68,7 +69,7 @@ const Footer = () => {
   return (
     <footer className="bg-charcoal text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand Section */}
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-3 mb-6">
@@ -92,6 +93,12 @@ const Footer = () => {
                 </a>
               </div>
               <div className="flex items-center space-x-3 text-gray-300">
+                <MessageCircle className="h-4 w-4 text-sage" />
+                <a href="https://wa.me/2347067285710" target="_blank" rel="noopener noreferrer" className="text-sm underline hover:text-sage">
+                  WhatsApp: 07067285710
+                </a>
+              </div>
+              <div className="flex items-center space-x-3 text-gray-300">
                 <Mail className="h-4 w-4 text-sage" />
                 <a href={`mailto:${config.contact.email}`} className="text-sm underline hover:text-sage">
                   {config.contact.email}
@@ -110,12 +117,12 @@ const Footer = () => {
             <ul className="space-y-3">
               {quickLinks.map((link, index) => (
                 <li key={index}>
-                  <a 
-                    href={link.href}
+                  <Link 
+                    to={link.href}
                     className="text-gray-300 hover:text-sage transition-colors duration-200 text-sm"
                   >
                     {link.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -127,12 +134,12 @@ const Footer = () => {
             <ul className="space-y-3">
               {resources.map((resource, index) => (
                 <li key={index}>
-                  <a 
-                    href={resource.href}
+                  <Link 
+                    to={resource.href}
                     className="text-gray-300 hover:text-sage transition-colors duration-200 text-sm"
                   >
                     {resource.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -142,7 +149,7 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-6 text-sage">Connect With Us</h4>
             <p className="text-gray-300 text-sm mb-4">
-              Follow us on social media for updates and community news.
+              Follow us on social media and reach us on WhatsApp for updates and community news.
             </p>
             
             <div className="flex space-x-4 mb-6">
@@ -151,6 +158,8 @@ const Footer = () => {
                   key={index}
                   href={social.href}
                   aria-label={social.label}
+                  target={social.label === "WhatsApp" ? "_blank" : "_self"}
+                  rel={social.label === "WhatsApp" ? "noopener noreferrer" : undefined}
                   className="w-10 h-10 rounded-full bg-gray-700 hover:bg-sage flex items-center justify-center transition-colors duration-200"
                 >
                   {social.icon}
@@ -196,15 +205,15 @@ const Footer = () => {
             </div>
             
             <div className="flex space-x-6 text-sm">
-              <a href="#" className="text-gray-300 hover:text-sage transition-colors duration-200">
+              <Link to="/privacy" className="text-gray-300 hover:text-sage transition-colors duration-200">
                 Privacy Policy
-              </a>
-              <a href="#" className="text-gray-300 hover:text-sage transition-colors duration-200">
+              </Link>
+              <Link to="/terms" className="text-gray-300 hover:text-sage transition-colors duration-200">
                 Terms of Service
-              </a>
-              <a href="#" className="text-gray-300 hover:text-sage transition-colors duration-200">
+              </Link>
+              <Link to="/accessibility" className="text-gray-300 hover:text-sage transition-colors duration-200">
                 Accessibility
-              </a>
+              </Link>
             </div>
           </div>
           

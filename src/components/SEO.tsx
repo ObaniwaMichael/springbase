@@ -20,7 +20,7 @@ interface SEOProps {
 const SEO = ({
   title = "Springbase Schools Lagos - Excellence in Education",
   description = "Springbase Schools Lagos offers comprehensive education from Nursery to College levels. Join our vibrant community with state-of-the-art facilities, experienced teachers, and proven academic excellence. Admission ongoing!",
-  keywords = "Springbase Schools, Lagos schools, private school Lagos, nursery school, primary school, college Lagos, Cambridge IGCSE, BECE, SSCE, NECO, education Nigeria, best schools Lagos",
+  keywords = "Springbase Schools, Lagos schools, private school Lagos, nursery school, primary school, college Lagos, Cambridge IGCSE, BECE, SSCE, NECO, education Nigeria, best schools Lagos, Okota schools, Ago Palace Way, admission ongoing, quality education, academic excellence, student life, facilities, admissions process, school tour, parent portal, student portal",
   image = "/images/WhatsApp Image 2025-09-05 at 15.11.21.jpeg",
   url = "https://www.springbase.com.ng",
   type = "website",
@@ -189,7 +189,7 @@ const SEO = ({
       
       {/* Google Analytics Page Tracking */}
       <script>
-        {typeof window !== 'undefined' && window.gtag && `
+        {typeof window !== 'undefined' && (window as any).gtag && `
           gtag('config', 'G-TXJ86GPW1L', {
             page_title: '${fullTitle}',
             page_location: '${fullUrl}'
