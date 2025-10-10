@@ -8,6 +8,38 @@
       "maxDuration": 30
     }
   },
+  "redirects": [
+    {
+      "source": "/students",
+      "destination": "https://students.springbase.com.ng",
+      "permanent": false
+    },
+    {
+      "source": "/students/(.*)",
+      "destination": "https://students.springbase.com.ng/$1",
+      "permanent": false
+    },
+    {
+      "source": "/parents",
+      "destination": "https://parents.springbase.com.ng",
+      "permanent": false
+    },
+    {
+      "source": "/parents/(.*)",
+      "destination": "https://parents.springbase.com.ng/$1",
+      "permanent": false
+    },
+    {
+      "source": "/admin",
+      "destination": "https://admin.springbase.com.ng",
+      "permanent": false
+    },
+    {
+      "source": "/admin/(.*)",
+      "destination": "https://admin.springbase.com.ng/$1",
+      "permanent": false
+    }
+  ],
   "rewrites": [
     {
       "source": "/api/(.*)",
