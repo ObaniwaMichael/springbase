@@ -7,12 +7,18 @@ import { getApiUrl } from "@/lib/api";
 import { config } from "@/lib/config";
 import { Link } from "react-router-dom";
 
+type LinkItem = {
+  name: string;
+  href: string;
+  external?: boolean;
+};
+
 const Footer = () => {
   const [email, setEmail] = useState("");
   const [submitting, setSubmitting] = useState(false);
   const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
 
-  const quickLinks = [
+  const quickLinks: LinkItem[] = [
     { name: "About Us", href: "/about" },
     { name: "Academic Programs", href: "/programs" },
     { name: "Admissions", href: "/admissions" },
@@ -21,9 +27,9 @@ const Footer = () => {
     { name: "Contact", href: "/contact" }
   ];
 
-  const resources = [
-    { name: "Parent Portal", href: "/parents" },
-    { name: "Student Portal", href: "/students" },
+  const resources: LinkItem[] = [
+    { name: "Parent Portal", href: "https://parents.springbase.com.ng", external: true },
+    { name: "Student Portal", href: "https://students.springbase.com.ng", external: true },
     { name: "Academic Calendar", href: "/calendar" },
     { name: "Faculty Directory", href: "/faculty" },
     { name: "News & Events", href: "/news" },
@@ -117,12 +123,23 @@ const Footer = () => {
             <ul className="space-y-3">
               {quickLinks.map((link, index) => (
                 <li key={index}>
-                  <Link 
-                    to={link.href}
-                    className="text-gray-300 hover:text-sage transition-colors duration-200 text-sm"
-                  >
-                    {link.name}
-                  </Link>
+                  {link.external ? (
+                    <a 
+                      href={link.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-300 hover:text-sage transition-colors duration-200 text-sm"
+                    >
+                      {link.name}
+                    </a>
+                  ) : (
+                    <Link 
+                      to={link.href}
+                      className="text-gray-300 hover:text-sage transition-colors duration-200 text-sm"
+                    >
+                      {link.name}
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>
@@ -134,12 +151,23 @@ const Footer = () => {
             <ul className="space-y-3">
               {resources.map((resource, index) => (
                 <li key={index}>
-                  <Link 
-                    to={resource.href}
-                    className="text-gray-300 hover:text-sage transition-colors duration-200 text-sm"
-                  >
-                    {resource.name}
-                  </Link>
+                  {resource.external ? (
+                    <a 
+                      href={resource.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-300 hover:text-sage transition-colors duration-200 text-sm"
+                    >
+                      {resource.name}
+                    </a>
+                  ) : (
+                    <Link 
+                      to={resource.href}
+                      className="text-gray-300 hover:text-sage transition-colors duration-200 text-sm"
+                    >
+                      {resource.name}
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>
