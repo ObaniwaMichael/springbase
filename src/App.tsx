@@ -9,6 +9,7 @@ import NotFound from "./pages/NotFound";
 import ScrollToTop from "./components/ScrollToTop";
 import LoadingSpinner from "./components/LoadingSpinner";
 import PerformanceMonitor from "./components/PerformanceMonitor";
+import PortalRedirect from "./components/PortalRedirect";
 import { lazy, Suspense } from "react";
 const AboutPage = lazy(() => import("./pages/About"));
 const ProgramsPage = lazy(() => import("./pages/Programs"));
@@ -43,6 +44,10 @@ const App = () => (
               <Route path="/contact" element={<ContactPage />} />
               <Route path="/schedule-tour" element={<ScheduleTourPage />} />
               <Route path="/gallery" element={<GalleryPage />} />
+              {/* Portal redirects */}
+              <Route path="/parents" element={<PortalRedirect url="https://parents.springbase.com.ng" />} />
+              <Route path="/students" element={<PortalRedirect url="https://students.springbase.com.ng" />} />
+              <Route path="/admin" element={<PortalRedirect url="https://admin.springbase.com.ng" />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
