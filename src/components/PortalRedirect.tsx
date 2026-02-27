@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { LoadingSpinner } from "@/components/ui/loading-spinner";
+import LoadingSpinner from "@/components/LoadingSpinner";
 
 interface PortalRedirectProps {
   url: string;
