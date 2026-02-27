@@ -1,4 +1,4 @@
-const CACHE_NAME = 'springbase-schools-v1';
+const CACHE_NAME = 'springbase-schools-v2';
 const urlsToCache = [
   '/',
   '/about',
@@ -28,13 +28,15 @@ self.addEventListener('install', (event) => {
 
 // Fetch event
 self.addEventListener('fetch', (event) => {
+  // Let the browser handle non-GET and special paths (e.g. Vercel well-known)
+  if (event.request.method !== 'GET' || event.request.url.includes('/.well-known/')) {
+    return;
+  }
   event.respondWith(
     caches.match(event.request)
-      .then((response) => {
-        // Return cached version or fetch from network
-        return response || fetch(event.request);
-      }
-    )
+      .then((response) => response || fetch(event.request))
+      .catch(() => caches.match('/').then((cached) => cached || caches.match('/index.html')))
+      .then((response) => response || new Response('Offline', { status: 503, statusText: 'Service Unavailable' }))
   );
 });
 
