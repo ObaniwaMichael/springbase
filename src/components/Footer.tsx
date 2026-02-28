@@ -229,7 +229,7 @@ const Footer = () => {
         <div className="border-t border-gray-700 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-gray-300 text-sm">
-              © 2024 Springbase Schools. All rights reserved.
+              © 2026 Springbase Schools. All rights reserved.
             </div>
             
             <div className="flex space-x-6 text-sm">
