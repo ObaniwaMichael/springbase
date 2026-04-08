@@ -32,6 +32,36 @@ if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('/sw.js')
       .then((registration) => {
         console.log('SW registered: ', registration);
+
+        // If there's an updated SW waiting, activate it and refresh so users
+        // don't get stuck on an old cached HTML shell.
+        const tryActivateUpdate = () => {
+          const waiting = registration.waiting;
+          if (waiting) {
+            waiting.postMessage({ type: "SKIP_WAITING" });
+          }
+        };
+
+        registration.addEventListener("updatefound", () => {
+          const installing = registration.installing;
+          if (!installing) return;
+          installing.addEventListener("statechange", () => {
+            if (installing.state === "installed") {
+              // If there's an existing controller, this was an update.
+              if (navigator.serviceWorker.controller) {
+                tryActivateUpdate();
+              }
+            }
+          });
+        });
+
+        navigator.serviceWorker.addEventListener("controllerchange", () => {
+          // New SW is controlling the page; refresh to load the latest assets.
+          window.location.reload();
+        });
+
+        // Also handle the case where an update is already waiting.
+        tryActivateUpdate();
       })
       .catch((registrationError) => {
         console.log('SW registration failed: ', registrationError);
