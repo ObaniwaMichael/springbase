@@ -15,6 +15,8 @@ interface SEOProps {
   noindex?: boolean;
   nofollow?: boolean;
   canonical?: string;
+  googleSiteVerification?: string;
+  bingSiteVerification?: string;
 }
 
 const SEO = ({
@@ -22,7 +24,7 @@ const SEO = ({
   description = "Springbase Schools Lagos offers comprehensive education from Nursery to College levels. Join our vibrant community with state-of-the-art facilities, experienced teachers, and proven academic excellence. Admission ongoing!",
   keywords = "Springbase Schools, Lagos schools, private school Lagos, nursery school, primary school, college Lagos, Cambridge IGCSE, BECE, SSCE, NECO, education Nigeria, best schools Lagos, Okota schools, Ago Palace Way, admission ongoing, quality education, academic excellence, student life, facilities, admissions process, school tour, parent portal, student portal",
   image = "/images/WhatsApp Image 2025-09-05 at 15.11.21.jpeg",
-  url = "https://www.springbase.com.ng",
+  url = "/",
   type = "website",
   author = "Springbase Schools Lagos",
   publishedTime,
@@ -31,11 +33,15 @@ const SEO = ({
   tags = ["education", "school", "Lagos", "Nigeria", "academic excellence"],
   noindex = false,
   nofollow = false,
-  canonical
+  canonical,
+  googleSiteVerification,
+  bingSiteVerification
 }: SEOProps) => {
   const fullTitle = title.includes("Springbase Schools") ? title : `${title} | Springbase Schools Lagos`;
-  const fullUrl = url.startsWith('http') ? url : `https://www.springbase.com.ng${url}`;
-  const fullImage = image.startsWith('http') ? image : `https://www.springbase.com.ng${image}`;
+  const siteUrl = (import.meta.env.VITE_SITE_URL?.toString().replace(/\/$/, "") || "https://springbase.com.ng");
+  const path = url.startsWith("http") ? new URL(url).pathname : url;
+  const fullUrl = url.startsWith('http') ? url : `${siteUrl}${path.startsWith("/") ? "" : "/"}${path}`;
+  const fullImage = image.startsWith('http') ? image : `${siteUrl}${image.startsWith("/") ? "" : "/"}${image}`;
   const canonicalUrl = canonical || fullUrl;
 
   return (
@@ -68,13 +74,13 @@ const SEO = ({
       <meta name="twitter:site" content="@springbaseschools" />
       <meta name="twitter:creator" content="@springbaseschools" />
       
-      {/* Additional Meta Tags */}
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta name="theme-color" content="#10B981" />
-      <meta name="msapplication-TileColor" content="#10B981" />
-      <meta name="mobile-web-app-capable" content="yes" />
-      <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-      <meta name="apple-mobile-web-app-title" content="Springbase Schools" />
+      {/* Site verification (Search Console / Bing) */}
+      {googleSiteVerification && (
+        <meta name="google-site-verification" content={googleSiteVerification} />
+      )}
+      {bingSiteVerification && (
+        <meta name="msvalidate.01" content={bingSiteVerification} />
+      )}
       
       {/* Article specific meta tags */}
       {type === "article" && publishedTime && (
@@ -100,8 +106,8 @@ const SEO = ({
           "@type": "EducationalOrganization",
           "name": "Springbase Schools Lagos",
           "alternateName": "Springbase Schools",
-          "url": "https://www.springbase.com.ng",
-          "logo": "https://www.springbase.com.ng/images/springbase-logo.png",
+          "url": siteUrl,
+          "logo": `${siteUrl}/images/springbase-logo.png`,
           "image": fullImage,
           "description": description,
           "address": {
@@ -181,33 +187,11 @@ const SEO = ({
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://www.springbase.com.ng"
+              "item": siteUrl
             }
           ]
         })}
       </script>
-      
-      {/* Google Analytics Page Tracking */}
-      <script>
-        {typeof window !== 'undefined' && (window as any).gtag && `
-          gtag('config', 'G-TXJ86GPW1L', {
-            page_title: '${fullTitle}',
-            page_location: '${fullUrl}'
-          });
-        `}
-      </script>
-      
-      {/* Additional SEO Meta Tags */}
-      <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-      <meta name="googlebot" content="index, follow" />
-      <meta name="bingbot" content="index, follow" />
-      <link rel="alternate" hrefLang="en" href={fullUrl} />
-      <meta name="format-detection" content="telephone=no" />
-      <meta name="theme-color" content="#10B981" />
-      <meta name="msapplication-TileColor" content="#10B981" />
-      <meta name="mobile-web-app-capable" content="yes" />
-      <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-      <meta name="apple-mobile-web-app-title" content="Springbase Schools" />
     </Helmet>
   );
 };

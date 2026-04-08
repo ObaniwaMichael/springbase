@@ -64,8 +64,10 @@ const Index = () => {
         title="Springbase Schools Lagos - Excellence in Education"
         description="Springbase Schools Lagos offers comprehensive education from Nursery to College levels. Join our vibrant community with state-of-the-art facilities, experienced teachers, and proven academic excellence. Admission ongoing!"
         keywords="Springbase Schools, Lagos schools, private school Lagos, nursery school, primary school, college Lagos, Cambridge IGCSE, BECE, SSCE, NECO, education Nigeria, best schools Lagos, admission ongoing"
-        url="https://www.springbase.com.ng"
+        url="/"
         image="/images/WhatsApp Image 2025-09-05 at 15.11.21.jpeg"
+        googleSiteVerification={import.meta.env.VITE_GOOGLE_SITE_VERIFICATION}
+        bingSiteVerification={import.meta.env.VITE_BING_SITE_VERIFICATION}
       />
       <Navigation />
       <Hero />

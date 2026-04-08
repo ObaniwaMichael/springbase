@@ -3,6 +3,7 @@ import PageLayout from "@/components/PageLayout";
 import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import SEO from "@/components/SEO";
 
 
 type Manifest = {
@@ -41,8 +42,14 @@ const GalleryPage = () => {
   const albums = useMemo(() => Object.keys(manifest?.albums || {}), [manifest]);
 
   return (
-    <PageLayout title="Gallery" subtitle="Photos from our vibrant community and events.">
-      <div className="space-y-8 pb-8">
+    <>
+      <SEO
+        title="Gallery | Springbase Schools Lagos"
+        description="Explore photos from Springbase Schools Lagos—campus life, events, celebrations, labs, and student activities."
+        url="/gallery"
+      />
+      <PageLayout title="Gallery" subtitle="Photos from our vibrant community and events.">
+        <div className="space-y-8 pb-8">
         <Tabs value={active} onValueChange={setActive} className="w-full">
           {/* Mobile: dropdown selector */}
           <div className="md:hidden">
@@ -126,8 +133,9 @@ const GalleryPage = () => {
             </TabsContent>
           ))}
         </Tabs>
-      </div>
-    </PageLayout>
+        </div>
+      </PageLayout>
+    </>
   );
 };
 

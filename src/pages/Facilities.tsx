@@ -14,12 +14,19 @@ import Lab from "@/assets/lab.jpeg";
 import Lab2 from "@/assets/lab-2.jpeg";
 import LabDay from "@/assets/lab-day.JPG";
 import LabStudies from "@/assets/lab-studies.JPG";
+import SEO from "@/components/SEO";
 
 const FacilitiesPage = () => {
   return (
-    <PageLayout title="Campus Facilities" subtitle="World-class spaces designed for learning and growth.">
-      <div className="space-y-12">
-        <Facilities />
+    <>
+      <SEO
+        title="Campus Facilities | Springbase Schools Lagos"
+        description="Explore Springbase Schools Lagos facilities—classrooms, labs, campus spaces, and environments built for learning and growth."
+        url="/facilities"
+      />
+      <PageLayout title="Campus Facilities" subtitle="World-class spaces designed for learning and growth.">
+        <div className="space-y-12">
+          <Facilities />
         
         {/* Campus Buildings Gallery */}
         <ImageGallery 
@@ -66,8 +73,9 @@ const FacilitiesPage = () => {
         <div className="space-y-6">
           <PlaceholderSection heading="Library" description="Resources, catalog, and study spaces." />
         </div>
-      </div>
-    </PageLayout>
+        </div>
+      </PageLayout>
+    </>
   );
 };
 

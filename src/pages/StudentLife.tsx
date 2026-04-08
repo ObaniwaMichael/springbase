@@ -8,13 +8,20 @@ import Celebration2 from "@/assets/celebration-2.jpg";
 import Celebration4 from "@/assets/celebration-4.jpg";
 import Celebration6 from "@/assets/celebration6.jpg";
 import Celebration7 from "@/assets/celebration7.jpg";
+import SEO from "@/components/SEO";
 
 const StudentLifePage = () => {
   return (
-    <PageLayout title="Student Life" subtitle="Clubs, activities, and a vibrant community.">
-      <div className="space-y-12">
+    <>
+      <SEO
+        title="Student Life | Springbase Schools Lagos"
+        description="Discover student life at Springbase Schools Lagos—clubs, events, activities, and a supportive, vibrant school community."
+        url="/student-life"
+      />
+      <PageLayout title="Student Life" subtitle="Clubs, activities, and a vibrant community.">
+        <div className="space-y-12">
 
-        <StudentLife />
+          <StudentLife />
         
         {/* Student Activities & Events - Main Gallery */}
         <div className="bg-gradient-to-br from-sage/5 to-lotus/5 py-8 rounded-3xl">
@@ -52,8 +59,9 @@ const StudentLifePage = () => {
           <PlaceholderSection heading="Events" description="Annual events, competitions, and showcases." />
           <PlaceholderSection heading="Wellbeing" description="Support resources and pastoral care." />
         </div>
-      </div>
-    </PageLayout>
+        </div>
+      </PageLayout>
+    </>
   );
 };
 

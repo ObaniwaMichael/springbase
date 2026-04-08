@@ -17,6 +17,7 @@ import PrimarySchool2 from "@/assets/primary-school-2.png";
 import PrimaryTour from "@/assets/primary-tour.png";
 import PriRecreation from "@/assets/pri-recreation.png";
 import SchoolBus from "@/assets/school-view.png";
+import SEO from "@/components/SEO";
 
 const ScheduleTourPage = () => {
   const { toast } = useToast();
@@ -84,8 +85,14 @@ const ScheduleTourPage = () => {
   }
 
   return (
-    <PageLayout title="Schedule a Campus Tour" subtitle="Pick a preferred day and time. We'll confirm availability.">
-      <div className="space-y-12">
+    <>
+      <SEO
+        title="Schedule a Campus Tour | Springbase Schools Lagos"
+        description="Schedule a campus tour at Springbase Schools Lagos. Choose a preferred date and time and we’ll confirm availability."
+        url="/schedule-tour"
+      />
+      <PageLayout title="Schedule a Campus Tour" subtitle="Pick a preferred day and time. We'll confirm availability.">
+        <div className="space-y-12">
         {/* Campus Tour Gallery */}
         <div className="bg-gradient-to-br from-sage/5 to-lotus/5 py-8 rounded-3xl">
           <ImageGallery 
@@ -177,8 +184,9 @@ const ScheduleTourPage = () => {
           </form>
         </CardContent>
         </Card>
-      </div>
-    </PageLayout>
+        </div>
+      </PageLayout>
+    </>
   );
 };
 
